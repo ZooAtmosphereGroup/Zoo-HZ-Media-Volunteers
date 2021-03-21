@@ -1,6 +1,7 @@
 import os
 from string import punctuation
 import json
+from multiprocessing import Process
 
 from PIL import Image
 
@@ -173,8 +174,47 @@ class HelloPhoto(object):
         return
 
     @classmethod
-    def add_ink(cls, path_in, ink_size=64, ink_position=''):
-        pass
+    def add_ink(cls, path_in, path_out, path_ink=None, ink_position=''):
+        # 添加水印
+        cls.mkdir_if_not_exist(path_out)
+
+        def _do(_path_file):
+            print('add_ink', _path_file)
+            try:
+                im = Image.open(_path_file)
+                im_width = im.size[0]
+                im_high = im.size[1]
+
+                watermark = Image.open(path_ink)
+                watermark_width = watermark.size[0]
+                watermark_high = watermark.size[1]
+
+                # 根据水印放大比率调整水印大小
+                watermark_high = int(2000.00 / watermark_width * watermark_high)
+                watermark_width = 2000
+                print(watermark_width, watermark_high)
+                watermark = watermark.resize((watermark_width, watermark_high),
+                                             resample=Image.ANTIALIAS)
+                # 居中
+                layer = Image.new('RGBA', im.size, (0, 0, 0, 0))
+                layer.paste(watermark, (im_width - watermark_width, im_high - watermark_high))
+                out = Image.composite(layer, im, layer)
+                _, _f = os.path.split(_path_file)
+                _path = os.path.join(path_out, _f)
+                out.convert("RGB").save(_path + '.webp', 'WEBP')
+            except Exception as e:
+                print("cannot convert", _path_file, e)
+
+        # file
+        if os.path.isfile(path_in):
+            _do(path_in)
+            return
+
+        # folder
+        if os.path.isdir(path_in):
+            for f in os.listdir(path_in):
+                _do(os.path.join(path_in, f))
+            return
 
     @classmethod
     def render_markdown(cls, path_in, path_out):
@@ -254,7 +294,8 @@ layout: default
                     if do_resize:
                         self.resize_with_the_same_ratio(path_webp_day, path_resize_day)
                     if do_add_ink:
-                        self.add_ink(path_resize_day, ink_size=32)
+                        pass
+                        # self.add_ink(path_resize_day, ink_size=32)
                     if do_render_md:
                         self.render_markdown(path_resize_day, path_mds_resize_day)
                     rendered[path_raw_day] = True
@@ -304,6 +345,10 @@ layout: default
 
 
 if __name__ == '__main__':
-
     hp = HelloPhoto()
-    hp.render_all()
+    # hp.render_all()
+    hp.add_ink(
+        path_in=r'C:\-C\Zoo-HZ-Media-Volunteers\static\images\raw\202103\20210321zbb',
+        path_out=r'C:\-C\Zoo-HZ-Media-Volunteers\static\images\webp\202103\20210321zbb',
+        path_ink=r'C:\-C\Zoo-HZ-Media-Volunteers\_files\w1-white.png'
+    )
