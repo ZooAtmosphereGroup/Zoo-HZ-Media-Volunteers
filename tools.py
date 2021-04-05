@@ -59,6 +59,7 @@ class HelloPhoto(object):
 
     @classmethod
     def transfer_jpg_to_webp(cls, path_in, path_out):
+        print('transfer_jpg_to_webp')
         cls.mkdir_if_not_exist(path_out)
 
         def _do(_path_file):
@@ -95,6 +96,7 @@ class HelloPhoto(object):
 
     @classmethod
     def create_thumbnail(cls, path_in, path_out, size=(640, 360)):
+        print('create_thumbnail')
         cls.mkdir_if_not_exist(path_out)
 
         def _do(_path_file):
@@ -136,7 +138,8 @@ class HelloPhoto(object):
         return
 
     @classmethod
-    def resize_with_the_same_ratio(cls, path_in, path_out, size_max=3200):
+    def resize_with_the_same_ratio(cls, path_in, path_out, size_max=3200, _format=None):
+        print('resize_with_the_same_ratio')
         cls.mkdir_if_not_exist(path_out)
 
         def _do(_path_file):
@@ -154,7 +157,10 @@ class HelloPhoto(object):
 
                 _, _f = os.path.split(_path_file)
                 _path = os.path.join(path_out, _f)
-                im.resize((width, height)).save(_path, 'WEBP')
+                if _format:
+                    im.resize((width, height)).save(_path, _format)
+                else:
+                    im.resize((width, height)).save(_path)
             except Exception as e:
                 print("cannot convert", _path_file, e)
 
@@ -190,8 +196,8 @@ class HelloPhoto(object):
                 watermark_high = watermark.size[1]
 
                 # 根据水印放大比率调整水印大小
-                watermark_high = int(2000.00 / watermark_width * watermark_high)
-                watermark_width = 2000
+                watermark_high = int(1000.00 / watermark_width * watermark_high)
+                watermark_width = 1000
                 print(watermark_width, watermark_high)
                 watermark = watermark.resize((watermark_width, watermark_high),
                                              resample=Image.ANTIALIAS)
@@ -201,7 +207,7 @@ class HelloPhoto(object):
                 out = Image.composite(layer, im, layer)
                 _, _f = os.path.split(_path_file)
                 _path = os.path.join(path_out, _f)
-                out.convert("RGB").save(_path + '.webp', 'WEBP')
+                out.save(_path)
             except Exception as e:
                 print("cannot convert", _path_file, e)
 
@@ -256,7 +262,7 @@ layout: default
     def render_home_page(cls, path_in):
         pass
 
-    def render_all(self, do_filter=True, do_add_ink=True, do_transfer_jpg_to_webp=True, do_resize=True,
+    def render_all(self, do_filter=False, do_add_ink=True, do_transfer_jpg_to_webp=False, do_resize=True,
                    do_render_md=True, do_render_home=True, do_dump=True):
         rendered = self.load_rendered()
         raw = os.listdir(_path_images_raw)
@@ -291,11 +297,14 @@ layout: default
                 try:
                     if do_transfer_jpg_to_webp:
                         self.transfer_jpg_to_webp(path_raw_day, path_webp_day)
+                        _in = path_webp_day
+                    else:
+                        _in = path_raw_day
                     if do_resize:
-                        self.resize_with_the_same_ratio(path_webp_day, path_resize_day)
+                        self.resize_with_the_same_ratio(_in, path_resize_day)
+                        _in = path_resize_day
                     if do_add_ink:
-                        pass
-                        # self.add_ink(path_resize_day, ink_size=32)
+                        self.add_ink(_in, _in, path_ink=r'C:\-C\Zoo-HZ-Media-Volunteers\_files\w1-white.png')
                     if do_render_md:
                         self.render_markdown(path_resize_day, path_mds_resize_day)
                     rendered[path_raw_day] = True
@@ -346,9 +355,14 @@ layout: default
 
 if __name__ == '__main__':
     hp = HelloPhoto()
-    # hp.render_all()
-    hp.add_ink(
-        path_in=r'C:\-C\Zoo-HZ-Media-Volunteers\static\images\raw\202103\20210321zbb',
-        path_out=r'C:\-C\Zoo-HZ-Media-Volunteers\static\images\webp\202103\20210321zbb',
-        path_ink=r'C:\-C\Zoo-HZ-Media-Volunteers\_files\w1-white.png'
-    )
+    hp.render_all()
+    # hp.add_ink(
+    #     path_in=r'C:\Users\0x7E5\Desktop\20210328 邹斌斌',
+    #     path_out=r'C:\Users\0x7E5\Desktop\20210328 邹斌斌2',
+    #     path_ink=r'C:\-C\Zoo-HZ-Media-Volunteers\_files\w1-white.png'
+    # )
+    # hp.resize_with_the_same_ratio(
+    #     path_in=r'C:\Users\0x7E5\Desktop\20210328 邹斌斌',
+    #     path_out=r'C:\Users\0x7E5\Desktop\20210328 邹斌斌2',
+    #     size_max=3200,
+    # )
