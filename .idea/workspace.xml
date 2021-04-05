@@ -1,0 +1,1319 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="04353262-4b08-4756-a0d7-f8dc16a7259d" name="Default Changelist" comment="type: init&#10;level: normal&#10;comment: add test images">
+      <change afterPath="$PROJECT_DIR$/.idea/Zoo-HZ-Media-Volunteers.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/0x7E5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_L/.idea/_L.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_L/.idea/deployment.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_L/.idea/dictionaries/0x7E5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_L/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_L/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_L/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_L/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_L/.idea/webServers.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_L/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_L/dfs_hm/.idea/dfs_hm.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_L/dfs_hm/BRD.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_L/dfs_hm/Env.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_L/dfs_hm/_files/CentOS-Current.repo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_L/dfs_hm/_files/CentOS-tsinghua.repo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_L/dfs_hm/deploy/BRDSub.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_L/dfs_hm/deploy/_command_build.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_L/dfs_hm/deploy/_command_call_deploy.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_L/dfs_hm/deploy/_command_deploy_server.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_L/dfs_hm/deploy/_command_recycle.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_L/dfs_hm/deploy/_command_run.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_L/dfs_hm/deploy/dockerfile.current" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_L/dfs_mirror/_files/update.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_L/dfs_mirror/dockerfile.v1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_L/dfs_openstack/BRD.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_L/dfs_openstack/_environment/BRDSub.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_L/dfs_openstack/_environment/_command_network_interface.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_L/dfs_openstack/_environment/command_build.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_L/dfs_openstack/_environment/command_recycle.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_L/dfs_openstack/glance/BRDSub.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_L/dfs_openstack/glance/_command_call_deploy.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_L/dfs_openstack/glance/_command_run.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_L/dfs_openstack/horizon/BRDSub.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_L/dfs_openstack/horizon/_command_call_deploy.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_L/dfs_openstack/horizon/_command_deploy_server.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_L/dfs_openstack/horizon/_command_run.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_L/dfs_openstack/keystone/BRDSub.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_L/dfs_openstack/keystone/_command_call_deploy.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_L/dfs_openstack/keystone/_command_deploy_server.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_L/dfs_openstack/keystone/_command_run.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_L/dfs_openstack/memcached/BRDSub.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_L/dfs_openstack/memcached/_command_call_deploy.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_L/dfs_openstack/memcached/_command_deploy_server.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_L/dfs_openstack/memcached/_command_run.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_L/dfs_openstack/message_queue/BRDSub.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_L/dfs_openstack/message_queue/_command_call_deploy.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_L/dfs_openstack/message_queue/_command_deploy_server.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_L/dfs_openstack/message_queue/_command_run.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_L/dfs_openstack/neutron/_command_call_deploy.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_L/dfs_openstack/neutron/_command_deploy_server.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_L/dfs_openstack/neutron/_command_run.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_L/dfs_openstack/nova/_command_call_deploy.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_L/dfs_openstack/nova/_command_deploy_server.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_L/dfs_openstack/nova/_command_run.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_L/dfs_openstack/ntp/BRDSub.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_L/dfs_openstack/ntp/_command_call_deploy.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_L/dfs_openstack/ntp/_command_deploy_client.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_L/dfs_openstack/ntp/_command_deploy_server.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_L/dfs_openstack/ntp/_command_run.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_L/dfs_openstack/placement/BRDSub.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_L/dfs_openstack/placement/_command_call_deploy.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_L/dfs_openstack/placement/_command_deploy_server.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_L/dfs_openstack/placement/_command_run.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_L/dfs_openstack/sqldatabase/BRDSub.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_L/dfs_openstack/sqldatabase/_command_call_deploy.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_L/dfs_openstack/sqldatabase/_command_deploy_server.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mds/webp-resize-2000/202103/20210328zbb.md" beforeDir="false" afterPath="$PROJECT_DIR$/mds/webp-resize-2000/202103/20210328zbb.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_L/CheckupOpenStack/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../_L/dfs_hm/deploy/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_L/CheckupOpenStack/check.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_L/DeployKolla/install.py" beforeDir="false" afterPath="$PROJECT_DIR$/../_L/DeployKolla/install.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_L/DeployTrain/Additional/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../_L/dfs_hm/scripts/hm.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_L/DeployTrain/AllInOne/Compute/_files/F_Centos-8.repo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_L/DeployTrain/AllInOne/Compute/dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_L/DeployTrain/AllInOne/Controller/_files/F_Centos-8.repo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_L/DeployTrain/AllInOne/Controller/_files/F_cirros-0.4.0-x86_64-disk.img" beforeDir="false" afterPath="$PROJECT_DIR$/../_L/dfs_openstack/_files/cirros-0.4.0-x86_64-disk.img" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_L/DeployTrain/AllInOne/Controller/dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_L/DeployTrain/Environment/_files/F_Centos-8.repo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_L/DeployTrain/Environment/dockerfile.info" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_L/DeployTrain/Glance/_files/F_Centos-8.repo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_L/DeployTrain/Glance/_files/F_cirros-0.4.0-x86_64-disk.img" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_L/DeployTrain/Horizon/_files/F_Centos-8.repo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_L/DeployTrain/Keystone/_files/F_Centos-8.repo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_L/DeployTrain/NetworkTimeProtocol/dockerfile.current" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_L/DeployTrain/Placement/_files/F_Centos-8.repo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_L/Hello.py" beforeDir="false" afterPath="$PROJECT_DIR$/../_L/dfs_hm/Hello.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_L/Keywords.py" beforeDir="false" afterPath="$PROJECT_DIR$/../_L/dfs_hm/Keywords.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_L/dfs_gitlab/docker-compose.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_L/dfs_gitlab/docker.info" beforeDir="false" afterPath="$PROJECT_DIR$/../_L/dfs_gitlab/docker.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_L/dfs_hm/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../_L/dfs_hm/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_L/dfs_mirror/docker.info" beforeDir="false" afterPath="$PROJECT_DIR$/../_L/dfs_mirror/docker.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_L/dfs_mirror/dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/../_L/dfs_mirror/dockerfile.v2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_L/dfs_openstack/Env.py" beforeDir="false" afterPath="$PROJECT_DIR$/../_L/dfs_openstack/Env.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_L/dfs_openstack/Hello.py" beforeDir="false" afterPath="$PROJECT_DIR$/../_L/dfs_openstack/Hello.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_L/dfs_openstack/Keywords.py" beforeDir="false" afterPath="$PROJECT_DIR$/../_L/dfs_openstack/Keywords.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_L/dfs_openstack/_bug_fix/Iptables.py" beforeDir="false" afterPath="$PROJECT_DIR$/../_L/dfs_openstack/_bug_fix/Iptables.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_L/dfs_openstack/_environment/Environment.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_L/dfs_openstack/_environment/Firewalld.py" beforeDir="false" afterPath="$PROJECT_DIR$/../_L/dfs_openstack/_environment/_command_firewalld.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_L/dfs_openstack/_environment/HostNetworking.py" beforeDir="false" afterPath="$PROJECT_DIR$/../_L/dfs_openstack/_environment/_command_name_resolution.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_L/dfs_openstack/_environment/OpenRC.py" beforeDir="false" afterPath="$PROJECT_DIR$/../_L/dfs_openstack/_environment/_command_open_rc.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_L/dfs_openstack/_environment/OpenStackPackages.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_L/dfs_openstack/_environment/Selinux.py" beforeDir="false" afterPath="$PROJECT_DIR$/../_L/dfs_openstack/_environment/_command_selinux.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_L/dfs_openstack/_environment/Yum.py" beforeDir="false" afterPath="$PROJECT_DIR$/../_L/dfs_openstack/_environment/_command_yum.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_L/dfs_openstack/_environment/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../_L/dfs_openstack/_environment/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_L/dfs_openstack/_files/CentOS-Current.repo" beforeDir="false" afterPath="$PROJECT_DIR$/../_L/dfs_openstack/_files/CentOS-Current.repo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_L/dfs_openstack/glance/Glance.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_L/dfs_openstack/glance/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../_L/dfs_openstack/glance/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_L/dfs_openstack/glance/docker.info" beforeDir="false" afterPath="$PROJECT_DIR$/../_L/dfs_openstack/glance/docker.run" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_L/dfs_openstack/glance/docker_build.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_L/dfs_openstack/glance/docker_deploy_server.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_L/dfs_openstack/glance/docker_run.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_L/dfs_openstack/glance/dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_L/dfs_openstack/glance/dockerfile.current" beforeDir="false" afterPath="$PROJECT_DIR$/../_L/dfs_openstack/glance/dockerfile.current" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_L/dfs_openstack/horizon/Horizon.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_L/dfs_openstack/horizon/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../_L/dfs_openstack/horizon/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_L/dfs_openstack/horizon/docker.info" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_L/dfs_openstack/horizon/docker_build.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_L/dfs_openstack/horizon/docker_deploy_server.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_L/dfs_openstack/horizon/docker_run.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_L/dfs_openstack/horizon/dockerfile.current" beforeDir="false" afterPath="$PROJECT_DIR$/../_L/dfs_openstack/horizon/dockerfile.current" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_L/dfs_openstack/keystone/Keystone.py" beforeDir="false" afterPath="$PROJECT_DIR$/../_L/dfs_openstack/glance/_command_deploy_server.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_L/dfs_openstack/keystone/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../_L/dfs_openstack/keystone/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_L/dfs_openstack/keystone/docker.info" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_L/dfs_openstack/keystone/docker_build.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_L/dfs_openstack/keystone/docker_deploy_server.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_L/dfs_openstack/keystone/docker_run.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_L/dfs_openstack/keystone/dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_L/dfs_openstack/keystone/dockerfile.current" beforeDir="false" afterPath="$PROJECT_DIR$/../_L/dfs_openstack/keystone/dockerfile.current" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_L/dfs_openstack/memcached/Memcached.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_L/dfs_openstack/memcached/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../_L/dfs_openstack/memcached/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_L/dfs_openstack/memcached/docker.info" beforeDir="false" afterPath="$PROJECT_DIR$/../_L/dfs_openstack/memcached/docker.run" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_L/dfs_openstack/memcached/docker_build.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_L/dfs_openstack/memcached/docker_deploy_server.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_L/dfs_openstack/memcached/docker_run.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_L/dfs_openstack/memcached/dockerfile.current" beforeDir="false" afterPath="$PROJECT_DIR$/../_L/dfs_openstack/memcached/dockerfile.current" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_L/dfs_openstack/message_queue/MessageQueue.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_L/dfs_openstack/message_queue/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../_L/dfs_openstack/message_queue/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_L/dfs_openstack/message_queue/docker.info" beforeDir="false" afterPath="$PROJECT_DIR$/../_L/dfs_openstack/message_queue/docker.run" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_L/dfs_openstack/message_queue/docker_build.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_L/dfs_openstack/message_queue/docker_deploy_server.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_L/dfs_openstack/message_queue/docker_run.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_L/dfs_openstack/message_queue/dockerfile.current" beforeDir="false" afterPath="$PROJECT_DIR$/../_L/dfs_openstack/message_queue/dockerfile.current" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_L/dfs_openstack/neutron/Neutron.py" beforeDir="false" afterPath="$PROJECT_DIR$/../_L/dfs_openstack/neutron/Neutron.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_L/dfs_openstack/neutron/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../_L/dfs_openstack/neutron/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_L/dfs_openstack/neutron/docker_build.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_L/dfs_openstack/neutron/docker_deploy_server.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_L/dfs_openstack/neutron/docker_run.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_L/dfs_openstack/neutron/dockerfile.current" beforeDir="false" afterPath="$PROJECT_DIR$/../_L/dfs_openstack/neutron/dockerfile.current" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_L/dfs_openstack/nova/Nova.py" beforeDir="false" afterPath="$PROJECT_DIR$/../_L/dfs_openstack/nova/Nova.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_L/dfs_openstack/nova/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../_L/dfs_openstack/nova/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_L/dfs_openstack/nova/docker_build.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_L/dfs_openstack/nova/docker_deploy_server.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_L/dfs_openstack/nova/docker_run.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_L/dfs_openstack/nova/dockerfile.current" beforeDir="false" afterPath="$PROJECT_DIR$/../_L/dfs_openstack/nova/dockerfile.current" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_L/dfs_openstack/ntp/NetworkTimeProtocol.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_L/dfs_openstack/ntp/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../_L/dfs_openstack/ntp/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_L/dfs_openstack/ntp/docker.info" beforeDir="false" afterPath="$PROJECT_DIR$/../_L/dfs_openstack/ntp/docker.run" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_L/dfs_openstack/ntp/docker_build.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_L/dfs_openstack/ntp/docker_deploy_server.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_L/dfs_openstack/ntp/docker_run.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_L/dfs_openstack/ntp/dockerfile.current" beforeDir="false" afterPath="$PROJECT_DIR$/../_L/dfs_openstack/ntp/dockerfile.current" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_L/dfs_openstack/placement/Placement.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_L/dfs_openstack/placement/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../_L/dfs_openstack/placement/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_L/dfs_openstack/placement/docker.info" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_L/dfs_openstack/placement/docker_build.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_L/dfs_openstack/placement/docker_deploy_server.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_L/dfs_openstack/placement/docker_run.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_L/dfs_openstack/placement/dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/../_L/dfs_openstack/placement/dockerfile.run" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_L/dfs_openstack/placement/dockerfile.current" beforeDir="false" afterPath="$PROJECT_DIR$/../_L/dfs_openstack/placement/dockerfile.current" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_L/dfs_openstack/sqldatabase/SQLDatabase.py" beforeDir="false" afterPath="$PROJECT_DIR$/../_L/dfs_openstack/sqldatabase/_command_run.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_L/dfs_openstack/sqldatabase/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../_L/dfs_openstack/sqldatabase/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_L/dfs_openstack/sqldatabase/docker.info" beforeDir="false" afterPath="$PROJECT_DIR$/../_L/dfs_openstack/sqldatabase/docker.run" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_L/dfs_openstack/sqldatabase/docker_build.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_L/dfs_openstack/sqldatabase/docker_deploy_server.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_L/dfs_openstack/sqldatabase/docker_run.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_L/dfs_openstack/sqldatabase/dockerfile.current" beforeDir="false" afterPath="$PROJECT_DIR$/../_L/dfs_openstack/sqldatabase/dockerfile.current" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_config.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="21">
+              <caret line="1" column="15" lean-forward="true" selection-start-line="1" selection-start-column="15" selection-end-line="1" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="267">
+              <caret line="127" column="26" lean-forward="true" selection-start-line="127" selection-start-column="26" selection-end-line="127" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/mds/webp-resize-2000/202103/20210321zbb.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor />
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mds/webp-resize-2000/202103/20210328zbb.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="FIRST">
+              <first_editor />
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>2400</find>
+      <find>https://zooatmospheregroup.github.io/Zoo-HZ-Media-Volunteers</find>
+      <find>getsize</find>
+      <find>:</find>
+      <find>json</find>
+      <find>Photo</find>
+      <find>os.</find>
+      <find>listdir</find>
+      <find>from xxx import zzz</find>
+      <find>@zzz()</find>
+      <find>@zzz(</find>
+      <find>zzz</find>
+      <find>op</find>
+      <find>6cc89975f887</find>
+      <find>18978171-703f-4561-9bfc-6a87a9642368</find>
+      <find>has rendered</find>
+      <find>is a link or other file</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>2000</replace>
+      <replace>': '</replace>
+      <replace />
+    </replaceStrings>
+    <dirStrings>
+      <dir>C:\-C\_L\dfs_hm</dir>
+      <dir>C:\-C\_L\dfs_openstack</dir>
+      <dir>C:\-C\Zoo-HZ-Media-Volunteers</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/mds/webp-resize-2400/202005/20200520.md" />
+        <option value="$PROJECT_DIR$/mds/webp-resize-2000/202005/20200520.md" />
+        <option value="$PROJECT_DIR$/mds/raw/202005/20200520.md" />
+        <option value="$PROJECT_DIR$/../_L/dfs_hm/scripts/h_mate.py" />
+        <option value="$PROJECT_DIR$/../_L/dfs_openstack/glance/_command_deploy_server.py" />
+        <option value="$PROJECT_DIR$/../_L/dfs_openstack/Hello.py" />
+        <option value="$PROJECT_DIR$/../_L/dfs_openstack/Deployments.py" />
+        <option value="$PROJECT_DIR$/../_L/dfs_openstack/__init__.py" />
+        <option value="$PROJECT_DIR$/../_L/dfs_openstack/glance/BRDSub.py" />
+        <option value="$PROJECT_DIR$/../_L/dfs_openstack/BRD.py" />
+        <option value="$PROJECT_DIR$/../_L/dfs_hm/common/decorator.py" />
+        <option value="$PROJECT_DIR$/../_L/dfs_hm/common/form.py" />
+        <option value="$PROJECT_DIR$/../_L/dfs_hm/business/front/__init__.py" />
+        <option value="$PROJECT_DIR$/../_L/dfs_hm/business/__init__.py" />
+        <option value="$PROJECT_DIR$/../_L/dfs_hm/common/st_flog/routes.py" />
+        <option value="$PROJECT_DIR$/../_L/dfs_hm/common/st_flog/tables.py" />
+        <option value="$PROJECT_DIR$/../_L/dfs_hm/common/st_flog/writer.py" />
+        <option value="$PROJECT_DIR$/../_L/dfs_hm/configuration/read.py" />
+        <option value="$PROJECT_DIR$/../_L/dfs_hm/scripts/photos.py" />
+        <option value="$PROJECT_DIR$/../_L/dfs_hm/extensions.py" />
+        <option value="$PROJECT_DIR$/../_L/dfs_hm/business/front/routes.py" />
+        <option value="$PROJECT_DIR$/../_L/dfs_hm/Hello.py" />
+        <option value="$PROJECT_DIR$/../_L/dfs_openstack/Modules.py" />
+        <option value="$PROJECT_DIR$/../_L/dfs_openstack/Injects.py" />
+        <option value="$PROJECT_DIR$/../_L/dfs_openstack/Env.py" />
+        <option value="$PROJECT_DIR$/../_L/dfs_hm/app.py" />
+        <option value="$PROJECT_DIR$/../_L/dfs_hm/main.py" />
+        <option value="$PROJECT_DIR$/../_L/dfs_hm/scripts/hm.py" />
+        <option value="$PROJECT_DIR$/_files/rendered.info" />
+        <option value="$PROJECT_DIR$/tools.py" />
+        <option value="$PROJECT_DIR$/_config.yml" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/mds/webp-resize-2000/202103/20210328zbb.md" />
+        <option value="$PROJECT_DIR$/mds/webp-resize-2000/202103/20210321zbb.md" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="752" />
+    <option name="y" value="27" />
+    <option name="width" value="1840" />
+    <option name="height" value="1090" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Zoo-HZ-Media-Volunteers" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Zoo-HZ-Media-Volunteers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Zoo-HZ-Media-Volunteers" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Zoo-HZ-Media-Volunteers" type="462c0819:PsiDirectoryNode" />
+              <item name="mds" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Zoo-HZ-Media-Volunteers" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Zoo-HZ-Media-Volunteers" type="462c0819:PsiDirectoryNode" />
+              <item name="mds" type="462c0819:PsiDirectoryNode" />
+              <item name="webp-resize-2000" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Zoo-HZ-Media-Volunteers" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Zoo-HZ-Media-Volunteers" type="462c0819:PsiDirectoryNode" />
+              <item name="mds" type="462c0819:PsiDirectoryNode" />
+              <item name="webp-resize-2000" type="462c0819:PsiDirectoryNode" />
+              <item name="202103" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Zoo-HZ-Media-Volunteers" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Zoo-HZ-Media-Volunteers" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Zoo-HZ-Media-Volunteers" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Zoo-HZ-Media-Volunteers" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Zoo-HZ-Media-Volunteers" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Zoo-HZ-Media-Volunteers" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+              <item name="webp-resize-2000" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/_files" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\-C\Zoo-HZ-Media-Volunteers\static\images\raw\202103" />
+      <recent name="C:\-C\Zoo-HZ-Media-Volunteers\static\images\raw\202012" />
+      <recent name="C:\-C\_L\dfs_hm\static\images" />
+      <recent name="C:\-C\_L\dfs_hm\_files" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\-C\Zoo-HZ-Media-Volunteers\_files" />
+      <recent name="C:\-C\Zoo-HZ-Media-Volunteers\static\images\raw\202103\20210321zbb" />
+      <recent name="C:\-C\_L\dfs_hm" />
+      <recent name="C:\-C\Zoo-HZ-Media-Volunteers\static\images\raw" />
+      <recent name="C:\-C\_L\dfs_hm\static\images" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.tools">
+    <configuration name="Injects (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="dfs_openstack" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../_L/dfs_openstack" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../_L/dfs_openstack/Injects.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Injects" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="dfs_hm" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../_L/dfs_hm" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../_L/dfs_hm/Injects.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="hm" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="dfs_hm" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\-P\Python38\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../_L/dfs_hm/scripts" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../_L/dfs_hm/scripts/hm.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="dfs_hm" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="sftp://root@192.168.1.2:22/usr/bin/python3" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../_L/dfs_hm" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../_L/dfs_hm/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="tools" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Zoo-HZ-Media-Volunteers" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\-P\Python38\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tools.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.hm" />
+      <item itemvalue="Python.Injects" />
+      <item itemvalue="Python.Injects (1)" />
+      <item itemvalue="Python.main" />
+      <item itemvalue="Python.tools" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.tools" />
+        <item itemvalue="Python.hm" />
+        <item itemvalue="Python.main" />
+        <item itemvalue="Python.Injects (1)" />
+        <item itemvalue="Python.Injects" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\shiyu\AppData\Roaming\Subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="04353262-4b08-4756-a0d7-f8dc16a7259d" name="Default Changelist" comment="" />
+      <created>1614183391575</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1614183391575</updated>
+      <workItem from="1614183393238" duration="13742000" />
+      <workItem from="1614413584008" duration="30046000" />
+      <workItem from="1614505006282" duration="9287000" />
+      <workItem from="1614607875433" duration="4443000" />
+      <workItem from="1614700497552" duration="459000" />
+      <workItem from="1614771532671" duration="18106000" />
+      <workItem from="1615023032952" duration="13877000" />
+      <workItem from="1615079019768" duration="1541000" />
+      <workItem from="1615100295572" duration="4293000" />
+      <workItem from="1615555132989" duration="2406000" />
+      <workItem from="1615599868856" duration="1626000" />
+      <workItem from="1615603607515" duration="581000" />
+      <workItem from="1615638180221" duration="298000" />
+      <workItem from="1615898656365" duration="595000" />
+      <workItem from="1616081209849" duration="2969000" />
+      <workItem from="1616168327209" duration="2560000" />
+      <workItem from="1616322687811" duration="14280000" />
+      <workItem from="1616424093066" duration="63000" />
+      <workItem from="1616514415986" duration="763000" />
+      <workItem from="1616908955066" duration="733000" />
+      <workItem from="1616938735150" duration="899000" />
+      <workItem from="1617202662526" duration="184000" />
+      <workItem from="1617611840407" duration="2846000" />
+    </task>
+    <task id="LOCAL-00001" summary="type: init&#10;level: normal&#10;comment: add test images">
+      <created>1614184741925</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1614184741925</updated>
+    </task>
+    <task id="LOCAL-00002" summary="type: init&#10;level: normal&#10;comment: add test images">
+      <created>1614185812797</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1614185812797</updated>
+    </task>
+    <task id="LOCAL-00003" summary="type: init&#10;level: normal&#10;comment: add test images">
+      <created>1614264296585</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1614264296585</updated>
+    </task>
+    <task id="LOCAL-00004" summary="type: init&#10;level: normal&#10;comment: add test images">
+      <created>1614264779789</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1614264779789</updated>
+    </task>
+    <task id="LOCAL-00005" summary="type: init&#10;level: normal&#10;comment: add test images">
+      <created>1614264865480</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1614264865480</updated>
+    </task>
+    <task id="LOCAL-00006" summary="type: init&#10;level: normal&#10;comment: add test images">
+      <created>1614265416154</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1614265416154</updated>
+    </task>
+    <task id="LOCAL-00007" summary="type: init&#10;level: normal&#10;comment: add test images">
+      <created>1614265581003</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1614265581003</updated>
+    </task>
+    <task id="LOCAL-00008" summary="type: init&#10;level: normal&#10;comment: add test images">
+      <created>1614265739804</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1614265739804</updated>
+    </task>
+    <task id="LOCAL-00009" summary="type: init&#10;level: normal&#10;comment: add test images">
+      <created>1614268058042</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1614268058042</updated>
+    </task>
+    <task id="LOCAL-00010" summary="type: init&#10;level: normal&#10;comment: add test images">
+      <created>1614268151234</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1614268151234</updated>
+    </task>
+    <task id="LOCAL-00011" summary="type: init&#10;level: normal&#10;comment: add test images">
+      <created>1614268769010</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1614268769010</updated>
+    </task>
+    <task id="LOCAL-00012" summary="type: init&#10;level: normal&#10;comment: add test images">
+      <created>1614268942764</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1614268942764</updated>
+    </task>
+    <task id="LOCAL-00013" summary="type: init&#10;level: normal&#10;comment: remove test resources">
+      <created>1614776480974</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1614776480975</updated>
+    </task>
+    <task id="LOCAL-00014" summary="type: update&#10;level: normal&#10;comment: update tools">
+      <created>1614785337281</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1614785337281</updated>
+    </task>
+    <task id="LOCAL-00015" summary="type: update&#10;level: normal&#10;comment: update tools">
+      <created>1614814116774</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1614814116775</updated>
+    </task>
+    <task id="LOCAL-00016" summary="type: update&#10;level: normal&#10;comment: remove images">
+      <created>1616335598673</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1616335598674</updated>
+    </task>
+    <task id="LOCAL-00017" summary="type: update&#10;level: normal&#10;comment: add ink">
+      <created>1616338569946</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1616338569946</updated>
+    </task>
+    <task id="LOCAL-00018" summary="type: add&#10;level: normal&#10;comment: add photos, 20210321 20210328">
+      <created>1617613542988</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1617613542988</updated>
+    </task>
+    <task id="LOCAL-00019" summary="type: init&#10;level: normal&#10;comment: add encoding">
+      <created>1617613848707</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1617613848707</updated>
+    </task>
+    <task id="LOCAL-00020" summary="type: init&#10;level: normal&#10;comment: add test images">
+      <created>1617613972586</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1617613972586</updated>
+    </task>
+    <task id="LOCAL-00021" summary="type: init&#10;level: normal&#10;comment: add test images">
+      <created>1617614065960</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1617614065960</updated>
+    </task>
+    <task id="LOCAL-00022" summary="type: init&#10;level: normal&#10;comment: add test images">
+      <created>1617614208467</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1617614208467</updated>
+    </task>
+    <task id="LOCAL-00023" summary="type: fix&#10;level: normal&#10;comment: fix build failure">
+      <created>1617614306604</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1617614306604</updated>
+    </task>
+    <task id="LOCAL-00024" summary="type: fix&#10;level: normal&#10;comment: fix build failure">
+      <created>1617614460159</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1617614460159</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="126597000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="70" y="-7" width="1473" height="878" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3067138" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.16756032" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.45844504" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.12466488" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.3297587" />
+      <window_info anchor="bottom" id="Terminal" order="11" />
+      <window_info anchor="bottom" id="Python Console" order="12" />
+      <window_info anchor="bottom" id="File Transfer" order="13" visible="true" weight="0.24932976" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" id="Database" order="4" weight="0.32932863" />
+      <window_info anchor="right" id="Remote Host" order="5" weight="0.32932863" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="type: init&#10;level: normal&#10;comment: remove test resources" />
+    <MESSAGE value="type: update&#10;level: normal&#10;comment: update tools" />
+    <MESSAGE value="type: update&#10;level: normal&#10;comment: remove images" />
+    <MESSAGE value="type: update&#10;level: normal&#10;comment: add ink" />
+    <MESSAGE value="type: add&#10;level: normal&#10;comment: add photos, 20210321 20210328" />
+    <MESSAGE value="type: init&#10;level: normal&#10;comment: add encoding" />
+    <MESSAGE value="type: init&#10;level: normal&#10;comment: add test images" />
+    <MESSAGE value="type: fix&#10;level: normal&#10;comment: fix build failure" />
+    <option name="LAST_COMMIT_MESSAGE" value="type: fix&#10;level: normal&#10;comment: fix build failure" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="PythonConfigurationType">
+        <watch expression="json.loads(rsp)" language="Python" />
+        <watch expression="cls" language="Python" />
+        <watch expression="hp" language="Python" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Zoo_HZ_Media_Volunteers$hm.coverage" NAME="hm Coverage Results" MODIFIED="1616334696267" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../_L/dfs_hm/scripts" />
+    <SUITE FILE_PATH="coverage/Zoo_HZ_Media_Volunteers$tools.coverage" NAME="tools Coverage Results" MODIFIED="1617613163903" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Zoo_HZ_Media_Volunteers$BRD.coverage" NAME="BRD Coverage Results" MODIFIED="1615039482426" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../_L/dfs_openstack" />
+    <SUITE FILE_PATH="coverage/Zoo_HZ_Media_Volunteers$Injects__1_.coverage" NAME="Injects (1) Coverage Results" MODIFIED="1615079081936" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../_L/dfs_openstack" />
+    <SUITE FILE_PATH="coverage/Zoo_HZ_Media_Volunteers$main.coverage" NAME="main Coverage Results" MODIFIED="1616327270698" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../_L/dfs_hm" />
+    <SUITE FILE_PATH="coverage/Zoo_HZ_Media_Volunteers$Modules.coverage" NAME="Modules Coverage Results" MODIFIED="1615048710953" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../_L/dfs_openstack" />
+    <SUITE FILE_PATH="coverage/Zoo_HZ_Media_Volunteers$Injects.coverage" NAME="Injects Coverage Results" MODIFIED="1615048929175" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../_L/dfs_hm" />
+    <SUITE FILE_PATH="coverage/Zoo_HZ_Media_Volunteers$h_mate.coverage" NAME="h_mate Coverage Results" MODIFIED="1614422271737" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../_L/dfs_hm/scripts" />
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="watch">
+      <expression>
+        <expression-string>hp</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>cls</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>json.loads(rsp)</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/../_L/dfs_hm/business/front/routes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-363">
+          <caret line="8" column="38" lean-forward="true" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../_L/dfs_hm/Hello.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-968">
+          <caret line="411" column="18" lean-forward="true" selection-start-line="411" selection-start-column="18" selection-end-line="411" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../_L/dfs_openstack/BRD.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="15" column="24" lean-forward="true" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+          <folding>
+            <element signature="e#213#232#0" expanded="true" />
+            <element signature="e#417#626#0" />
+            <element signature="e#440#531#0" />
+            <element signature="e#657#661#0" />
+            <element signature="e#690#694#0" />
+            <element signature="e#731#735#0" />
+            <element signature="e#774#778#0" />
+            <element signature="e#817#821#0" />
+            <element signature="e#854#858#0" />
+            <element signature="e#926#1194#0" />
+            <element signature="e#1050#1193#0" />
+            <element signature="e#1227#1231#0" />
+            <element signature="e#1266#1270#0" />
+            <element signature="e#1303#1307#0" />
+            <element signature="e#1348#1352#0" />
+            <element signature="e#1403#1407#0" />
+            <element signature="e#1461#1465#0" />
+            <element signature="e#1494#1498#0" />
+            <element signature="e#1535#2491#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../_L/dfs_hm/Injects.py" />
+    <entry file="file://$PROJECT_DIR$/../_L/dfs_openstack/Hello.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7866">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <element signature="n#!!doc" />
+            <element signature="e#36#47#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../_L/dfs_openstack/Injects.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="31" column="13" lean-forward="true" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
+          <folding>
+            <element signature="e#128#476#0" />
+            <element signature="e#1317#4249#0" />
+            <element signature="e#4284#5134#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../_L/dfs_openstack/keystone/_command_run.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#249#292#0" expanded="true" />
+            <element signature="e#361#906#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../_L/dfs_openstack/keystone/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../_L/dfs_openstack/keystone/_command_call_deploy.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="609">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
+          <folding>
+            <element signature="e#249#292#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../_L/dfs_openstack/keystone/_command_deploy_server.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <element signature="e#249#300#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../_L/dfs_openstack/Env.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="819">
+          <caret line="39" column="32" selection-start-line="39" selection-start-column="32" selection-end-line="39" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../_L/dfs_openstack/horizon/_command_deploy_server.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../_L/dfs_openstack/keystone/BRDSub.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="609">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../_L/dfs_openstack/memcached/BRDSub.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../_L/dfs_openstack/memcached/_command_deploy_server.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="37" column="14" selection-start-line="37" selection-start-column="14" selection-end-line="37" selection-end-column="14" />
+          <folding>
+            <element signature="e#333#384#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../_L/dfs_openstack/_environment/_command_name_resolution.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" column="46" selection-start-line="3" selection-start-column="46" selection-end-line="3" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../_L/dfs_hm/templates/__-親家四姊妹-100.html" />
+    <entry file="file://$PROJECT_DIR$/../_L/dfs_hm/_files/newest.info">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../_L/dfs_hm/templates/親家四姊妹.html" />
+    <entry file="file://$PROJECT_DIR$/../_L/dfs_hm/blueprints.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../_L/dfs_hm/deploy/mkdir.py" />
+    <entry file="file://$PROJECT_DIR$/../_L/dfs_hm/deploy/BRDSub.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="567">
+          <caret line="28" column="32" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../_L/dfs_hm/deploy/dockerfile.current">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../_L/dfs_hm/deploy/dockerfile">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../_L/dfs_hm/deploy/_command_recycle.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../_L/dfs_hm/deploy/_command_run.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../_L/dfs_hm/deploy/_command_call_deploy.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="23" column="6" lean-forward="true" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
+          <folding>
+            <element signature="e#249#292#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../_L/dfs_hm/deploy/_command_build.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../_L/dfs_hm/deploy/_command_deploy_server.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="37" column="46" selection-start-line="37" selection-start-column="46" selection-end-line="37" selection-end-column="46" />
+          <folding>
+            <element signature="e#333#384#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../_L/dfs_hm/BRD.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="e#220#239#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../_L/dfs_hm/scripts/test.png" />
+    <entry file="file://C:/-P/Python38/Lib/site-packages/aiohttp/client.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="373" column="18" selection-start-line="373" selection-start-column="8" selection-end-line="373" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../_L/dfs_hm/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+          <folding>
+            <element signature="e#35#58#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../_L/dfs_hm/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="30" column="46" selection-start-line="30" selection-start-column="46" selection-end-line="30" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../_L/dfs_hm/scripts/photos.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="651">
+          <caret line="228" column="39" selection-start-line="228" selection-start-column="39" selection-end-line="228" selection-end-column="39" />
+          <folding>
+            <element signature="e#244#248#0" />
+            <element signature="e#326#1504#0" />
+            <element signature="e#326#444#1" />
+            <element signature="e#608#876#0" />
+            <element signature="e#608#613#0" />
+            <element signature="e#903#1134#0" />
+            <element signature="e#903#912#0" />
+            <element signature="e#1240#1504#0" />
+            <element signature="e#1563#1729#0" />
+            <element signature="e#1563#1647#1" />
+            <element signature="e#1799#3051#0" />
+            <element signature="e#1799#1878#1" />
+            <element signature="e#1937#1980#0" />
+            <element signature="e#2383#2664#0" />
+            <element signature="e#2451#2500#0" />
+            <element signature="e#2724#3007#0" />
+            <element signature="e#2796#3007#0" />
+            <element signature="e#3121#4164#0" />
+            <element signature="e#3121#3223#1" />
+            <element signature="e#3262#3284#0" />
+            <element signature="e#3576#3586#0" />
+            <element signature="e#4229#5457#0" />
+            <element signature="e#4229#4309#1" />
+            <element signature="e#4368#4411#0" />
+            <element signature="e#4805#5078#0" />
+            <element signature="e#4873#4922#0" />
+            <element signature="e#5138#5413#0" />
+            <element signature="e#5210#5413#0" />
+            <element signature="e#5537#5874#0" />
+            <element signature="e#5537#5655#1" />
+            <element signature="e#5702#5824#0" />
+            <element signature="e#5942#6126#0" />
+            <element signature="e#6737#8814#0" />
+            <element signature="e#6755#6812#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../PhotoMerge/mg.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1134">
+          <caret line="65" column="32" selection-start-line="65" selection-start-column="26" selection-end-line="65" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+            <element signature="e#395#694#0" />
+            <element signature="e#395#464#1" />
+            <element signature="e#2597#2715#1" />
+            <element signature="e#2959#3418#0" />
+            <element signature="e#2959#3020#1" />
+            <element signature="e#3237#3385#0" />
+            <element signature="e#3452#3482#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../_L/dfs_mirror/docker.info">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../_L/dfs_mirror/dockerfile.v1">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../_L/dfs_mirror/dockerfile.v2">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../_L/dfs_gitlab/docker.info">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../_L/dfs_hm/scripts/hm.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-507">
+          <caret line="114" selection-start-line="114" selection-end-line="114" />
+          <folding>
+            <element signature="e#24#35#0" expanded="true" />
+            <element signature="e#4029#4419#0" />
+            <element signature="e#4471#5312#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/manifest.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://C:/-P/Python38/Lib/json/decoder.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="354" selection-start-line="354" selection-end-line="354" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_files/rendered.info">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="20" lean-forward="true" selection-start-column="20" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tools.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="307" column="36" selection-start-line="307" selection-start-column="36" selection-end-line="307" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+            <element signature="e#1390#1464#0" />
+            <element signature="e#1530#1612#0" />
+            <element signature="e#1674#1767#0" />
+            <element signature="e#1923#2671#0" />
+            <element signature="e#1998#2581#0" />
+            <element signature="e#2736#2767#0" />
+            <element signature="e#2833#2927#0" />
+            <element signature="e#3196#4008#0" />
+            <element signature="e#3267#3918#0" />
+            <element signature="e#3476#3629#0" />
+            <element signature="e#4073#4104#0" />
+            <element signature="e#4170#4264#0" />
+            <element signature="e#4555#5329#0" />
+            <element signature="e#4636#5239#0" />
+            <element signature="e#4761#4839#0" />
+            <element signature="e#4882#4960#0" />
+            <element signature="e#5394#5425#0" />
+            <element signature="e#5491#5585#0" />
+            <element signature="e#5785#7268#0" />
+            <element signature="e#7174#7268#0" />
+            <element signature="e#7344#8348#0" />
+            <element signature="e#7519#7592#0" />
+            <element signature="e#7612#7667#0" />
+            <element signature="e#7696#7739#0" />
+            <element signature="e#7828#8244#0" />
+            <element signature="e#8415#8419#0" />
+            <element signature="e#10614#10665#0" />
+            <element signature="e#10855#11041#0" />
+            <element signature="e#11091#11209#0" />
+            <element signature="e#11249#11438#0" />
+            <element signature="e#11485#11674#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CNAME">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="17" lean-forward="true" selection-start-column="17" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="1" column="15" lean-forward="true" selection-start-line="1" selection-start-column="15" selection-end-line="1" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="127" column="26" lean-forward="true" selection-start-line="127" selection-start-column="26" selection-end-line="127" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mds/webp-resize-2000/202103/20210328zbb.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mds/webp-resize-2000/202103/20210321zbb.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
