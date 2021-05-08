@@ -1,3 +1,4 @@
+# -*- encoding: utf-8 -*-
 import os
 from string import punctuation
 import json
@@ -26,6 +27,8 @@ _path_list = [
 
 class HelloPhoto(object):
     file_rendered = os.path.join(_path_files, 'rendered.info')
+    file_volunteers = os.path.join(_path_files, 'volunteers.info')
+    file_stream_key = os.path.join(_path_files, 'stream_key.info')
     file_ink = os.path.join(_path_files, 'ink.png')
     url_home = 'https://zooatmospheregroup.github.io/Zoo-HZ-Media-Volunteers'
 
@@ -39,26 +42,34 @@ class HelloPhoto(object):
 
     @classmethod
     def load_rendered(cls):
+        # 加载渲染信息
+        print('load_rendered')
+        # todo: 适配不同开发节点上的不同路径
         with open(cls.file_rendered, 'r') as f:
             return json.load(f)
 
     @classmethod
     def dump_rendered(cls, rendered):
+        # 保存渲染信息
+        print('dump_rendered')
         with open(cls.file_rendered, 'w') as f:
-            json.dump(rendered, f)
+            json.dump(rendered, f, indent=4)
 
     @classmethod
     def fix_file_name(cls, file_name):
+        # 适配文件名
         return ''.join([f.lower() for f in file_name if f == '.' or f not in punctuation])
 
     @staticmethod
     def mkdir_if_not_exist(path):
+        # 如果文件夹不存在， 则创建
         if os.path.exists(path) and os.path.isdir(path):
             return
         os.makedirs(path)
 
     @classmethod
     def transfer_jpg_to_webp(cls, path_in, path_out):
+        # JPG转WEBP
         print('transfer_jpg_to_webp')
         cls.mkdir_if_not_exist(path_out)
 
@@ -96,6 +107,7 @@ class HelloPhoto(object):
 
     @classmethod
     def create_thumbnail(cls, path_in, path_out, size=(640, 360)):
+        # 创建略缩图
         print('create_thumbnail')
         cls.mkdir_if_not_exist(path_out)
 
@@ -139,6 +151,7 @@ class HelloPhoto(object):
 
     @classmethod
     def resize_with_the_same_ratio(cls, path_in, path_out, size_max=3200, _format=None):
+        # 调整尺寸, 保持长宽比
         print('resize_with_the_same_ratio')
         cls.mkdir_if_not_exist(path_out)
 
@@ -182,6 +195,7 @@ class HelloPhoto(object):
     @classmethod
     def add_ink(cls, path_in, path_out, path_ink=None, ink_position=''):
         # 添加水印
+        print('add_ink')
         cls.mkdir_if_not_exist(path_out)
 
         def _do(_path_file):
@@ -224,6 +238,8 @@ class HelloPhoto(object):
 
     @classmethod
     def render_markdown(cls, path_in, path_out):
+        # 渲染页面单个页面
+        print('render_markdown')
         path_out_head, tail = os.path.split(path_out)
         cls.mkdir_if_not_exist(path_out_head)
 
@@ -243,7 +259,12 @@ layout: default
 """
         md = ''
         md += md_head
-        for f in os.listdir(path_in):
+
+        # 先对文件按照名称排序
+        path_in_files = os.listdir(path_in)
+        path_in_files.sort()
+
+        for f in path_in_files:
             # /home/xxx/static/images/webp/zzz/a.webp
             path_abs_f = os.path.join(path_in, f)
             size = round(os.path.getsize(path_abs_f) / 1024 / 1024, 2)
@@ -260,6 +281,7 @@ layout: default
 
     @classmethod
     def render_home_page(cls, path_in):
+        # 渲染主页面
         pass
 
     def render_all(self, do_filter=False, do_add_ink=True, do_transfer_jpg_to_webp=False, do_resize=True,
@@ -304,7 +326,7 @@ layout: default
                         self.resize_with_the_same_ratio(_in, path_resize_day)
                         _in = path_resize_day
                     if do_add_ink:
-                        self.add_ink(_in, _in, path_ink=r'C:\-C\Zoo-HZ-Media-Volunteers\_files\w1-white.png')
+                        self.add_ink(_in, _in, path_ink=r'_files/w1-white.png')
                     if do_render_md:
                         self.render_markdown(path_resize_day, path_mds_resize_day)
                     rendered[path_raw_day] = True
@@ -352,17 +374,40 @@ layout: default
             do_dump=False
         )
 
+    @classmethod
+    def encrypt_raw(cls, path_in):
+        # 流加密
+        print('encrypt_raw')
+        if not os.path.exists(cls.file_stream_key):
+            print('file_stream_key not exist', cls.file_stream_key)
+            return
+
+        with open(cls.file_stream_key, 'rb') as f:
+            bin_key = f.read()
+        length_key = len(bin_key)
+
+        for root, dirs, files in os.walk(path_in):
+
+            for file in files:
+                _file = os.path.join(root, file)
+
+                with open(_file, 'rb') as f:
+                    bin_raw = f.read()
+
+                bin_encrypt = bytearray()
+
+                k = 0
+                for i in bin_raw:
+                    j = bin_key[k % length_key]
+                    bin_encrypt.append(i ^ j)
+                    k += 1
+
+                with open(_file, 'wb') as f:
+                    f.write(bin_encrypt)
+                print('encrypt_raw', _file)
+
 
 if __name__ == '__main__':
     hp = HelloPhoto()
-    hp.render_all()
-    # hp.add_ink(
-    #     path_in=r'C:\Users\0x7E5\Desktop\20210328 邹斌斌',
-    #     path_out=r'C:\Users\0x7E5\Desktop\20210328 邹斌斌2',
-    #     path_ink=r'C:\-C\Zoo-HZ-Media-Volunteers\_files\w1-white.png'
-    # )
-    # hp.resize_with_the_same_ratio(
-    #     path_in=r'C:\Users\0x7E5\Desktop\20210328 邹斌斌',
-    #     path_out=r'C:\Users\0x7E5\Desktop\20210328 邹斌斌2',
-    #     size_max=3200,
-    # )
+    hp.encrypt_raw(_path_images_raw)
+    # hp.render_all(do_filter=True)
