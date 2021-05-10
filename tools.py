@@ -309,7 +309,7 @@ layout: default
                 size=size_str,
                 name=f,
                 photo_description=i_description,
-                path=cls.site + '/' + path)
+                path=path)
             md += item
 
         with open(os.path.join(path_out_head, tail), 'w') as f:
