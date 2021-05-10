@@ -2,6 +2,7 @@
 import os
 from string import punctuation
 import json
+
 from multiprocessing import Process
 
 from PIL import Image
@@ -26,10 +27,17 @@ _path_list = [
 
 
 class HelloPhoto(object):
+    # 已渲染信息
     file_rendered = os.path.join(_path_files, 'rendered.info')
+    # 志愿者列表
     file_volunteers = os.path.join(_path_files, 'volunteers.info')
+    # 流密钥
     file_stream_key = os.path.join(_path_files, 'stream_key.info')
+    # 水印
     file_ink = os.path.join(_path_files, 'ink.png')
+    # 页面信息
+    file_page_info = os.path.join(_path_files, 'page.info')
+    # 发布站点地址
     url_home = 'https://zooatmospheregroup.github.io/Zoo-HZ-Media-Volunteers'
 
     def __init__(self):
@@ -240,6 +248,17 @@ class HelloPhoto(object):
     def render_markdown(cls, path_in, path_out):
         # 渲染页面单个页面
         print('render_markdown')
+        folder = path_in.split('/')[-1]
+
+        # 加载页面信息文件
+        with open(cls.file_page_info, 'r', encoding='utf-8') as f:
+            page_info = json.load(f)
+
+        if folder not in page_info:
+            raise KeyError('page info not exist: %s' % path_in)
+
+        info = page_info[folder]
+
         path_out_head, tail = os.path.split(path_out)
         cls.mkdir_if_not_exist(path_out_head)
 
@@ -250,15 +269,19 @@ class HelloPhoto(object):
         md_head = """---
 layout: default
 ---
-### render for path: %s
+### Author: {author}
+### Description: {remark}
+### Date: {date}
 
-""" % path_in
-        md_item = """## {size}, {name}
+"""
+        md_item = """## {size}, {photo_description}
 ![{name}]({path})
 
 """
-        md = ''
-        md += md_head
+        photos_description = info['photos_description']
+        md = md_head.format(author=info['author'],
+                            remark=info['remark'],
+                            date=info['date'])
 
         # 先对文件按照名称排序
         path_in_files = os.listdir(path_in)
@@ -272,7 +295,14 @@ layout: default
 
             # url_home/static/images/webp/zzz/a.webp
             path = path_abs_f[path_abs_f.find('/static/images/'):]
-            item = md_item.format(size=size_str, name=f, path=path)
+
+            # 照片描述
+            i_description = photos_description[f] if f in photos_description else ''
+            item = md_item.format(
+                size=size_str,
+                name=f,
+                photo_description=i_description,
+                path=path)
             md += item
 
         with open(os.path.join(path_out_head, tail), 'w') as f:
@@ -346,11 +376,15 @@ layout: default
             do_resize=True,
             do_render_md=True,
             do_render_home=True,
+            do_add_ink=True,
             do_dump=False
         )
 
     def just_transfer_and_resize(self):
         self.render_all(
+            do_transfer_jpg_to_webp=True,
+            do_resize=True,
+            do_add_ink=False,
             do_render_md=False,
             do_render_home=False,
             do_dump=False
@@ -360,6 +394,7 @@ layout: default
         self.render_all(
             do_transfer_jpg_to_webp=False,
             do_resize=False,
+            do_add_ink=False,
             do_render_md=True,
             do_render_home=False,
             do_dump=False
@@ -369,6 +404,7 @@ layout: default
         self.render_all(
             do_transfer_jpg_to_webp=False,
             do_resize=False,
+            do_add_ink=False,
             do_render_md=False,
             do_render_home=True,
             do_dump=False
@@ -376,7 +412,7 @@ layout: default
 
     @classmethod
     def encrypt_raw(cls, path_in):
-        # 流加密
+        # 流加密, 对称
         print('encrypt_raw')
         if not os.path.exists(cls.file_stream_key):
             print('file_stream_key not exist', cls.file_stream_key)
@@ -406,8 +442,50 @@ layout: default
                     f.write(bin_encrypt)
                 print('encrypt_raw', _file)
 
+    @classmethod
+    def create_page_info(cls, path_in):
+        # 创建页面信息
+        # page_info = {
+        #     # dir: {'title': title, 'author': author,
+        #     #       'date': date, 'description': description
+        #     #       'folder': folder
+        #     #      }
+        # }
+        # 页面信息文件不存在, 则创建
+        if not os.path.exists(cls.file_page_info):
+            with open(cls.file_page_info, 'w', encoding='utf-8') as f:
+                json.dump({}, f)
+
+        with open(cls.file_page_info, 'r', encoding='utf-8') as f:
+            page_info = json.load(f)
+
+        # 更新页面信息
+        for root, dirs, files in os.walk(path_in):
+            # 跳过子目录
+            if not files:
+                continue
+
+            folder = root.split('/')[-1]
+            author = folder[8:]
+            date = folder[:8]
+            page_info[folder] = {
+                'title': '',
+                'author': author,
+                'date': date,
+                'remark': '',
+                'photos_description': {
+                }
+            }
+            page_info[folder]['photos_description'] = dict([(i, i)for i in files])
+
+        # 保存页面信息
+        # todo: 按目录名称降序排序
+        with open(cls.file_page_info, 'w', encoding='utf-8') as f:
+            json.dump(page_info, f, indent=4, ensure_ascii=False, sort_keys=True)
+
 
 if __name__ == '__main__':
     hp = HelloPhoto()
-    hp.encrypt_raw(_path_images_raw)
+    hp.create_page_info(_path_images_raw)
+    hp.just_render_md()
     # hp.render_all(do_filter=True)
