@@ -333,7 +333,9 @@ layout: default
             home = f.read()
 
         pages = ''
-        for page, info in page_info.items():
+        # 逆序
+        for page in sorted(list(page_info.keys()), reverse=True):
+            info = page_info[page]
             md_path = info['md_path']
             author = info['author']
             remark = info['remark']
@@ -531,7 +533,7 @@ layout: default
 
 if __name__ == '__main__':
     hp = HelloPhoto()
-    hp.create_page_info(_path_images_raw)
+    # hp.create_page_info(_path_images_raw)
     hp.just_render_home_page()
     # hp.render_all(do_filter=True)
 
