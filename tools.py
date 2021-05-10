@@ -339,7 +339,7 @@ layout: default
             remark = info['remark']
             title = info['title']
             date = info['date']
-            pages += div_page.format(md_path=cls.site + '/' + md_path,
+            pages += div_page.format(md_path=md_path,
                                      author=author,
                                      title=title,
                                      date=date,
