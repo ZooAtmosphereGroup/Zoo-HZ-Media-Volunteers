@@ -43,7 +43,7 @@ class HelloPhoto(object):
     # 模板home
     file_template_home = os.path.join(_path_templates, 'home.html')
     # 发布站点地址
-    url_home = 'https://zooatmospheregroup.github.io/Zoo-HZ-Media-Volunteers'
+    site = 'Zoo-HZ-Media-Volunteers'
 
     def __init__(self):
         for i in _path_list:
@@ -309,7 +309,7 @@ layout: default
                 size=size_str,
                 name=f,
                 photo_description=i_description,
-                path=path)
+                path=cls.site + '/' + path)
             md += item
 
         with open(os.path.join(path_out_head, tail), 'w') as f:
@@ -339,7 +339,7 @@ layout: default
             remark = info['remark']
             title = info['title']
             date = info['date']
-            pages += div_page.format(md_path=md_path,
+            pages += div_page.format(md_path=cls.site + '/' + md_path,
                                      author=author,
                                      title=title,
                                      date=date,
@@ -506,7 +506,7 @@ layout: default
             folder = root.split('/')[-1]
             author = folder[8:]
             date = folder[:8]
-            md_path = 'mds/webp-resize-2000' + root.replace(path_in, '')
+            md_path = cls.site + '/mds/webp-resize-2000' + root.replace(path_in, '')
 
             # 跳过已渲染
             if folder in page_info:
@@ -532,7 +532,7 @@ layout: default
 
 if __name__ == '__main__':
     hp = HelloPhoto()
-    # hp.create_page_info(_path_images_raw)
-    # hp.just_render_md()
+    hp.create_page_info(_path_images_raw)
+    hp.just_render_md()
     hp.just_render_home_page()
     # hp.render_all(do_filter=True)
