@@ -303,7 +303,7 @@ layout: default
             size_str = 'size: %sM' % size
 
             # url_home/static/images/webp/zzz/a.webp
-            path = path_abs_f[path_abs_f.find('/static/images/'):]
+            path = path_abs_f[path_abs_f.find('static/images/'):]
 
             # 照片描述
             i_description = photos_description[f] if f in photos_description else ''
@@ -508,7 +508,7 @@ layout: default
             folder = root.split('/')[-1]
             author = folder[8:]
             date = folder[:8]
-            md_path = '/mds/webp-resize-2000' + root.replace(path_in, '')
+            md_path = 'mds/webp-resize-2000' + root.replace(path_in, '')
 
             # 跳过已渲染
             if folder in page_info:
@@ -534,7 +534,8 @@ layout: default
 if __name__ == '__main__':
     hp = HelloPhoto()
     hp.create_page_info(_path_images_raw)
-    hp.just_render_home_page()
+    hp.just_render_md()
+    # hp.just_render_home_page()
     # hp.render_all(do_filter=True)
 
 
