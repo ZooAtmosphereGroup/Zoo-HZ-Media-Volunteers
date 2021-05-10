@@ -8,6 +8,7 @@ from multiprocessing import Process
 from PIL import Image
 
 _path_project = os.path.dirname(os.path.abspath(__file__))
+_path_templates = os.path.join(_path_project, 'templates')
 _path_files = os.path.join(_path_project, '_files')
 _path_mds = os.path.join(_path_project, 'mds')
 _path_mds_resize = os.path.join(_path_mds, 'webp-resize-2000')
@@ -37,6 +38,12 @@ class HelloPhoto(object):
     file_ink = os.path.join(_path_files, 'ink.png')
     # 页面信息
     file_page_info = os.path.join(_path_files, 'page.info')
+    # 主页
+    file_index = os.path.join(_path_project, 'index.html')
+    # 模板div
+    file_template_div_page = os.path.join(_path_templates, 'div_page.html')
+    # 模板home
+    file_template_home = os.path.join(_path_templates, 'home.html')
     # 发布站点地址
     url_home = 'https://zooatmospheregroup.github.io/Zoo-HZ-Media-Volunteers'
 
@@ -158,7 +165,8 @@ class HelloPhoto(object):
         return
 
     @classmethod
-    def resize_with_the_same_ratio(cls, path_in, path_out, size_max=3200, _format=None):
+    def resize_with_the_same_ratio(cls, path_in, path_out,
+                                   size_max=3200, _format=None):
         # 调整尺寸, 保持长宽比
         print('resize_with_the_same_ratio')
         cls.mkdir_if_not_exist(path_out)
@@ -201,7 +209,8 @@ class HelloPhoto(object):
         return
 
     @classmethod
-    def add_ink(cls, path_in, path_out, path_ink=None, ink_position=''):
+    def add_ink(cls, path_in, path_out,
+                path_ink=None, ink_position=''):
         # 添加水印
         print('add_ink')
         cls.mkdir_if_not_exist(path_out)
@@ -312,10 +321,38 @@ layout: default
     @classmethod
     def render_home_page(cls, path_in):
         # 渲染主页面
-        pass
+        print('render_home_page', path_in)
 
-    def render_all(self, do_filter=False, do_add_ink=True, do_transfer_jpg_to_webp=False, do_resize=True,
-                   do_render_md=True, do_render_home=True, do_dump=True):
+        with open(cls.file_page_info, 'r') as f:
+            page_info = json.load(f)
+
+        with open(cls.file_template_div_page, 'r') as f:
+            div_page = f.read()
+
+        with open(cls.file_template_home, 'r') as f:
+            home = f.read()
+
+        pages = ''
+        for page, info in page_info.items():
+            md_path = info['md_path']
+            author = info['author']
+            remark = info['remark']
+            title = info['title']
+            date = info['date']
+            pages += div_page.format(md_path=md_path,
+                                     author=author,
+                                     title=title,
+                                     date=date,
+                                     remark=remark)
+        home = home % pages
+        # 写入
+        with open(cls.file_index, 'w') as f:
+            f.write(home)
+
+    def render_all(self, do_filter=False, do_add_ink=True,
+                   do_transfer_jpg_to_webp=False,
+                   do_resize=True, do_render_md=True,
+                   do_render_home=True, do_dump=True):
         rendered = self.load_rendered()
         raw = os.listdir(_path_images_raw)
         for raw_month in raw:
@@ -445,6 +482,7 @@ layout: default
     @classmethod
     def create_page_info(cls, path_in):
         # 创建页面信息
+        print('create_page_info', path_in)
         # page_info = {
         #     # dir: {'title': title, 'author': author,
         #     #       'date': date, 'description': description
@@ -468,11 +506,18 @@ layout: default
             folder = root.split('/')[-1]
             author = folder[8:]
             date = folder[:8]
+            md_path = '/mds/webp-resize-2000' + root.replace(path_in, '') + '.md'
+
+            # 跳过已渲染
+            if folder in page_info:
+                continue
+            print('create_page_info', folder)
             page_info[folder] = {
                 'title': '',
                 'author': author,
                 'date': date,
                 'remark': '',
+                'md_path': md_path,
                 'photos_description': {
                 }
             }
@@ -487,5 +532,7 @@ layout: default
 if __name__ == '__main__':
     hp = HelloPhoto()
     hp.create_page_info(_path_images_raw)
-    hp.just_render_md()
+    hp.just_render_home_page()
     # hp.render_all(do_filter=True)
+
+
