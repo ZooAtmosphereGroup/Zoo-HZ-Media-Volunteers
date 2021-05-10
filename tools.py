@@ -508,7 +508,7 @@ layout: default
             folder = root.split('/')[-1]
             author = folder[8:]
             date = folder[:8]
-            md_path = '/mds/webp-resize-2000' + root.replace(path_in, '') + '.md'
+            md_path = '/mds/webp-resize-2000' + root.replace(path_in, '')
 
             # 跳过已渲染
             if folder in page_info:
@@ -533,7 +533,7 @@ layout: default
 
 if __name__ == '__main__':
     hp = HelloPhoto()
-    # hp.create_page_info(_path_images_raw)
+    hp.create_page_info(_path_images_raw)
     hp.just_render_home_page()
     # hp.render_all(do_filter=True)
 
