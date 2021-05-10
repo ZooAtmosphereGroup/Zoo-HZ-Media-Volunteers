@@ -3,8 +3,6 @@ import os
 from string import punctuation
 import json
 
-from multiprocessing import Process
-
 from PIL import Image
 
 _path_project = os.path.dirname(os.path.abspath(__file__))
@@ -515,6 +513,7 @@ layout: default
                 continue
             print('create_page_info', folder)
             page_info[folder] = {
+                'thumbnail': '',
                 'title': '',
                 'author': author,
                 'date': date,
@@ -533,9 +532,7 @@ layout: default
 
 if __name__ == '__main__':
     hp = HelloPhoto()
-    hp.create_page_info(_path_images_raw)
-    hp.just_render_md()
-    # hp.just_render_home_page()
+    # hp.create_page_info(_path_images_raw)
+    # hp.just_render_md()
+    hp.just_render_home_page()
     # hp.render_all(do_filter=True)
-
-
