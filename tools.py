@@ -533,6 +533,6 @@ layout: default
 if __name__ == '__main__':
     hp = HelloPhoto()
     hp.create_page_info(_path_images_raw)
-    hp.just_render_md()
-    # hp.just_render_home_page()
+    # hp.just_render_md()
+    hp.just_render_home_page()
     # hp.render_all(do_filter=True)
