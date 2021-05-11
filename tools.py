@@ -342,7 +342,7 @@ layout: default
             date = info['date']
             thumbnail = info['thumbnail']
             path_thumbnail = '/'.join(('static/images', path_resize, path_author, thumbnail))
-            path_md = '/'.join(('md', path_resize, path_author))
+            path_md = '/'.join(('mds', path_resize, path_author))
 
             pages += div_page.format(path_md=path_md,
                                      author=author,
