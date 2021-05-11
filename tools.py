@@ -334,15 +334,21 @@ layout: default
         # 逆序
         for page in sorted(list(page_info.keys()), reverse=True):
             info = page_info[page]
-            md_path = info['md_path']
+            path_author = info['path_author']
+            path_resize = info['path_resize']
             author = info['author']
             remark = info['remark']
             title = info['title']
             date = info['date']
-            pages += div_page.format(md_path=md_path,
+            thumbnail = info['thumbnail']
+            path_thumbnail = '/'.join(('static/images', path_resize, path_author, thumbnail))
+            path_md = '/'.join(('md', path_resize, path_author))
+
+            pages += div_page.format(path_md=path_md,
                                      author=author,
                                      title=title,
                                      date=date,
+                                     path_thumbnail=path_thumbnail,
                                      remark=remark)
         home = home % pages
         # 写入
@@ -480,7 +486,7 @@ layout: default
                 print('encrypt_raw', _file)
 
     @classmethod
-    def create_page_info(cls, path_in):
+    def create_page_info(cls, path_in, ignore_rendered=True):
         # 创建页面信息
         print('create_page_info', path_in)
         # page_info = {
@@ -504,21 +510,21 @@ layout: default
                 continue
 
             folder = root.split('/')[-1]
-            author = folder[8:]
-            date = folder[:8]
-            md_path = cls.site + '/mds/webp-resize-2000' + root.replace(path_in, '')
-
             # 跳过已渲染
-            if folder in page_info:
+            if ignore_rendered and folder in page_info:
                 continue
             print('create_page_info', folder)
+            author = folder[8:]
+            date = folder[:8]
+            path_author = root.replace(path_in, '')
             page_info[folder] = {
                 'thumbnail': '',
                 'title': '',
                 'author': author,
                 'date': date,
                 'remark': '',
-                'md_path': md_path,
+                'path_resize': 'webp-resize-2000',
+                'path_author': path_author,
                 'photos_description': {
                 }
             }
@@ -532,7 +538,7 @@ layout: default
 
 if __name__ == '__main__':
     hp = HelloPhoto()
-    hp.create_page_info(_path_images_raw)
+    # hp.create_page_info(_path_images_raw, ignore_rendered=False)
     # hp.just_render_md()
     hp.just_render_home_page()
     # hp.render_all(do_filter=True)
