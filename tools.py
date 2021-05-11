@@ -276,9 +276,9 @@ class HelloPhoto(object):
         md_head = """---
 layout: default
 ---
-### Author: {author}
-### Description: {remark}
-### Date: {date}
+### 摄影: {author}
+### 描述: {remark}
+### 提交时间: {date}
 
 """
         md_item = """## {size}, {photo_description}
@@ -538,7 +538,7 @@ layout: default
 
 if __name__ == '__main__':
     hp = HelloPhoto()
-    # hp.create_page_info(_path_images_raw, ignore_rendered=False)
-    # hp.just_render_md()
+    hp.create_page_info(_path_images_raw)
+    hp.just_render_md()
     hp.just_render_home_page()
     # hp.render_all(do_filter=True)
