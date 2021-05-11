@@ -53,7 +53,7 @@ layout: default
 ##### size: 0.66M, 薮猫
 ![薮猫IMG_1361.JPG](/Zoo-HZ-Media-Volunteers/static/images/webp-resize-2000/202104/20210429HeLingLei/薮猫IMG_1361.JPG)
 
-##### size: 0.64M, 薮猫
+##### size: 0.63M, 薮猫
 ![薮猫IMG_1362.JPG](/Zoo-HZ-Media-Volunteers/static/images/webp-resize-2000/202104/20210429HeLingLei/薮猫IMG_1362.JPG)
 
 ##### size: 0.65M, 薮猫
