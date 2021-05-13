@@ -2,7 +2,7 @@
 layout: default
 ---
 ### 摄影: ZouBinBin
-### 描述: 处暑 七月初四   2020.08.22 周六
+### 描述: 处暑 七月初四  2020.08.22 周六
 ### 提交时间: 20200822
 
 ##### size: 1.17M, 梅花鹿
@@ -68,28 +68,28 @@ layout: default
 ##### size: 0.29M, DSCF1174.JPG
 ![DSCF1174.JPG](/Zoo-HZ-Media-Volunteers/static/images/webp-resize-2000/202008/20200822ZouBinBin/DSCF1174.JPG)
 
-##### size: 0.3M, DSCF1307.JPG
+##### size: 0.3M, 鸳鸯
 ![DSCF1307.JPG](/Zoo-HZ-Media-Volunteers/static/images/webp-resize-2000/202008/20200822ZouBinBin/DSCF1307.JPG)
 
-##### size: 0.34M, DSCF1314.JPG
+##### size: 0.34M, 鸳鸯
 ![DSCF1314.JPG](/Zoo-HZ-Media-Volunteers/static/images/webp-resize-2000/202008/20200822ZouBinBin/DSCF1314.JPG)
 
-##### size: 0.47M, DSCF1339.jpg
+##### size: 0.47M, 鸳鸯
 ![DSCF1339.jpg](/Zoo-HZ-Media-Volunteers/static/images/webp-resize-2000/202008/20200822ZouBinBin/DSCF1339.jpg)
 
-##### size: 0.26M, DSCF1457.JPG
+##### size: 0.26M, 火烈鸟
 ![DSCF1457.JPG](/Zoo-HZ-Media-Volunteers/static/images/webp-resize-2000/202008/20200822ZouBinBin/DSCF1457.JPG)
 
-##### size: 0.47M, DSCF1577.jpg
+##### size: 0.47M, 鹈鹕
 ![DSCF1577.jpg](/Zoo-HZ-Media-Volunteers/static/images/webp-resize-2000/202008/20200822ZouBinBin/DSCF1577.jpg)
 
 ##### size: 0.56M, DSCF1804.jpg
 ![DSCF1804.jpg](/Zoo-HZ-Media-Volunteers/static/images/webp-resize-2000/202008/20200822ZouBinBin/DSCF1804.jpg)
 
-##### size: 1.11M, DSCF1830.jpg
+##### size: 1.11M, 盘羊
 ![DSCF1830.jpg](/Zoo-HZ-Media-Volunteers/static/images/webp-resize-2000/202008/20200822ZouBinBin/DSCF1830.jpg)
 
-##### size: 0.46M, DSCF1900.jpg
+##### size: 0.46M, 毛冠鹿
 ![DSCF1900.jpg](/Zoo-HZ-Media-Volunteers/static/images/webp-resize-2000/202008/20200822ZouBinBin/DSCF1900.jpg)
 
 ##### size: 1.01M, DSCF1948.jpg
