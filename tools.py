@@ -1,5 +1,6 @@
 # -*- encoding: utf-8 -*-
 import os
+from functools import wraps
 from string import punctuation
 import json
 
@@ -544,7 +545,8 @@ if __name__ == '__main__':
     hp = HelloPhoto()
     # hp.encrypt_raw(path_in=_path_images_raw)
     # hp.create_page_info(_path_images_raw)
-    # hp.just_render_md()
+    # hp.render_all(do_filter=True)
+    hp.just_render_md()
     hp.just_render_home_page()
     # hp.render_all()
     # hp.render_all(do_filter=True)

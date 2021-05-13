@@ -358,11 +358,11 @@
             "DSCF5691.JPG": "双角犀鸟",
             "DSCF5694.JPG": "DSCF5694.JPG",
             "DSCF5695.JPG": "DSCF5695.JPG",
+            "小熊猫关系图.png": "小熊猫关系图.png",
             "小白.JPG": "小白.JPG",
             "小黑.JPG": "小黑.JPG",
             "文文.JPG": "文文.JPG",
-            "豆豆.JPG": "豆豆.JPG",
-            "小熊猫关系图.png": "小熊猫关系图.png"
+            "豆豆.JPG": "豆豆.JPG"
         },
         "remark": "小雪 十月初八   2020.11.22 周六",
         "thumbnail": "DSCF5691.JPG",
@@ -483,9 +483,9 @@
             "4E7A2770.JPG": "狮子(雌性)",
             "4E7A2783.JPG": "黑熊",
             "4E7A2809.JPG": "黄金蟒",
-            "4E7A2812.JPG": "4E7A2812.JPG",
+            "4E7A2812.JPG": "尖吻蝮",
             "4E7A2815.JPG": "黄金蟒",
-            "4E7A2824.JPG": "4E7A2824.JPG",
+            "4E7A2824.JPG": "王锦蛇",
             "DSC02387.jpg": "细尾獴",
             "DSC02460.JPG": "细尾獴",
             "DSC02464.JPG": "细尾獴",
@@ -501,13 +501,13 @@
             "DSC03592.JPG": "长颈鹿",
             "DSC03593.JPG": "长颈鹿",
             "DSC03627.JPG": "川金丝猴",
-            "DSC03639.JPG": "DSC03639.JPG",
-            "DSC03657.JPG": "DSC03657.JPG",
-            "DSC03662.jpg": "DSC03662.jpg",
+            "DSC03639.JPG": "黑帽悬猴",
+            "DSC03657.JPG": "黑帽悬猴",
+            "DSC03662.jpg": "黑帽悬猴",
             "DSC03693.JPG": "环尾狐猴",
             "DSC03712.jpg": "火烈鸟"
         },
-        "remark": "",
+        "remark": "动物园里有什么?",
         "thumbnail": "DSC03712.jpg",
         "title": "动物园里有什么?"
     },
@@ -598,5 +598,22 @@
         "remark": "",
         "thumbnail": "DSC03303.JPG",
         "title": ""
+    },
+    "20210513LiChao": {
+        "author": "LiChao",
+        "date": "20210513",
+        "path_author": "/202105/20210513LiChao",
+        "path_resize": "webp-resize-2000",
+        "photos_description": {
+            "DSC04462 (2).JPG": "DSC04462 (2).JPG",
+            "小熊猫.JPG": "小熊猫.JPG",
+            "山魈.JPG": "山魈.JPG",
+            "山魈2.JPG": "山魈2.JPG",
+            "猕猴.JPG": "猕猴.JPG",
+            "金丝猴幼崽.JPG": "金丝猴幼崽.JPG"
+        },
+        "remark": "动物园里有什么?",
+        "thumbnail": "",
+        "title": "动物园里有什么?"
     }
 }
