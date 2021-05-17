@@ -543,10 +543,10 @@ layout: default
 
 if __name__ == '__main__':
     hp = HelloPhoto()
-    # hp.encrypt_raw(path_in=_path_images_raw)
+    # hp.encrypt_raw(path_in='/home/zoo/_L/Zoo-HZ-Media-Volunteers/static/images/raw/202105/20210515ZouBinBin')
     # hp.create_page_info(_path_images_raw)
     # hp.render_all(do_filter=True)
-    hp.just_render_md()
-    hp.just_render_home_page()
+    # hp.just_render_md()
+    # hp.just_render_home_page()
     # hp.render_all()
     # hp.render_all(do_filter=True)

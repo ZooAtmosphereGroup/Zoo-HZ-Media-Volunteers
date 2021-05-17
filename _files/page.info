@@ -615,5 +615,27 @@
         "remark": "动物园里有什么?",
         "thumbnail": "小熊猫.JPG",
         "title": "动物园里有什么?"
+    },
+    "20210515ZouBinBin": {
+        "author": "ZouBinBin",
+        "date": "20210515",
+        "path_author": "/202105/20210515ZouBinBin",
+        "path_resize": "webp-resize-2000",
+        "photos_description": {
+            "大红鹳.JPG": "大红鹳",
+            "扬子鳄.JPG": "扬子鳄",
+            "美洲豹.JPG": "美洲豹",
+            "金钱豹.JPG": "金钱豹",
+            "金钱豹2.JPG": "金钱豹",
+            "金钱豹3.JPG": "金钱豹",
+            "马来熊.JPG": "马来熊",
+            "鸸鹋.JPG": "鸸鹋",
+            "鸸鹋幼崽.JPG": "鸸鹋幼崽",
+            "鹈鹕.JPG": "鹈鹕",
+            "黑天鹅幼崽.JPG": "黑天鹅幼崽"
+        },
+        "remark": "",
+        "thumbnail": "金钱豹2.JPG",
+        "title": ""
     }
 }
