@@ -543,14 +543,14 @@ layout: default
 
 if __name__ == '__main__':
     hp = HelloPhoto()
-    # hp.encrypt_raw(path_in='/home/zoo/_L/Zoo-HZ-Media-Volunteers/static/images/raw/202105/20210515ZouBinBin')
+    # hp.encrypt_raw(path_in='/home/zoo/_L/Zoo-HZ-Media-Volunteers/static/images/raw/202105/20210520WaterInk')
     # hp.create_page_info(_path_images_raw)
     # hp.render_all(do_filter=True)
     # hp.just_render_md()
     # hp.render_all()
     #
-    hp.render_markdown(
-        path_in='/home/zoo/_L/Zoo-HZ-Media-Volunteers/static/images/webp-resize-2000/202105/20210520WaterInk',
-        path_out='/home/zoo/_L/Zoo-HZ-Media-Volunteers/mds/webp-resize-2000/202105/20210520WaterInk.md'
-    )
-    hp.just_render_home_page()
+    # hp.render_markdown(
+    #     path_in='/home/zoo/_L/Zoo-HZ-Media-Volunteers/static/images/webp-resize-2000/202105/20210520WaterInk',
+    #     path_out='/home/zoo/_L/Zoo-HZ-Media-Volunteers/mds/webp-resize-2000/202105/20210520WaterInk.md'
+    # )
+    # hp.just_render_home_page()
