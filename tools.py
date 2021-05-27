@@ -1,6 +1,6 @@
 # -*- encoding: utf-8 -*-
 import os
-from functools import wraps
+import time
 from string import punctuation
 import json
 
@@ -31,8 +31,6 @@ class HelloPhoto(object):
     file_rendered = os.path.join(_path_files, 'rendered.info')
     # 志愿者列表
     file_volunteers = os.path.join(_path_files, 'volunteers.info')
-    # 流密钥
-    file_stream_key = os.path.join(_path_files, 'stream_key.info')
     # 水印
     file_ink = os.path.join(_path_files, 'ink.png')
     # 页面信息
@@ -459,17 +457,13 @@ layout: default
         )
 
     @classmethod
-    def encrypt_raw(cls, path_in):
+    def encrypt_by_str(cls, path_in, key):
         # 流加密, 对称
         print('encrypt_raw')
-        if not os.path.exists(cls.file_stream_key):
-            print('file_stream_key not exist', cls.file_stream_key)
-            return
-
-        with open(cls.file_stream_key, 'rb') as f:
-            bin_key = f.read()
+        ts = time.time()
+        bin_key = bytearray(key.encode('utf-8'))
         length_key = len(bin_key)
-
+        count = 0
         for root, dirs, files in os.walk(path_in):
 
             for file in files:
@@ -479,16 +473,19 @@ layout: default
                     bin_raw = f.read()
 
                 bin_encrypt = bytearray()
-
                 k = 0
                 for i in bin_raw:
                     j = bin_key[k % length_key]
                     bin_encrypt.append(i ^ j)
                     k += 1
-
-                with open(_file, 'wb') as f:
-                    f.write(bin_encrypt)
-                print('encrypt_raw', _file)
+                try:
+                    with open(_file, 'wb') as f:
+                        f.write(bin_encrypt)
+                    print('encrypt_raw', _file)
+                    count += 1
+                except Exception as _:
+                    print('pass', _file)
+        print('\nend encrypt_raw, cost:', time.time() - ts, ' file count:', count)
 
     @classmethod
     def create_page_info(cls, path_in, ignore_rendered=True):
@@ -543,7 +540,8 @@ layout: default
 
 if __name__ == '__main__':
     hp = HelloPhoto()
-    # hp.encrypt_raw(path_in='/home/zoo/_L/Zoo-HZ-Media-Volunteers/static/images/raw/202105/20210520WaterInk')
+    hp.encrypt_by_str('/home/zoo/_L/Zoo-HZ-Media-Volunteers/static/images/raw',
+                      key='')
     # hp.create_page_info(_path_images_raw)
     # hp.render_all(do_filter=True)
     # hp.just_render_md()
