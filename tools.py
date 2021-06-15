@@ -45,6 +45,17 @@ class HelloPhoto(object):
     site = 'Zoo-HZ-Media-Volunteers'
 
     def __init__(self):
+        self.path_ink = None
+        self.position_ink = 'bottom right'
+        self.ratio_ink = 1000
+        positions = (
+            'bottom right', 'bottom center', 'bottom left',
+            'top right', 'top center', 'top left',
+        )
+        if self.position_ink not in positions:
+            print('position error')
+            return
+
         for i in _path_list:
             self.mkdir_if_not_exist(i)
         if os.path.exists(self.file_rendered):
@@ -205,12 +216,11 @@ class HelloPhoto(object):
         print('path: %s is a link or other file' % path_in)
         return
 
-    @classmethod
-    def add_ink(cls, path_in, path_out,
-                path_ink=None, ink_position=''):
+    def add_ink(self, path_in, path_out):
         # 添加水印
         print('add_ink')
-        cls.mkdir_if_not_exist(path_out)
+
+        self.mkdir_if_not_exist(path_out)
 
         def _do(_path_file):
             print('add_ink', _path_file)
@@ -219,19 +229,38 @@ class HelloPhoto(object):
                 im_width = im.size[0]
                 im_high = im.size[1]
 
-                watermark = Image.open(path_ink)
+                watermark = Image.open(self.path_ink)
                 watermark_width = watermark.size[0]
                 watermark_high = watermark.size[1]
 
                 # 根据水印放大比率调整水印大小
-                watermark_high = int(1000.00 / watermark_width * watermark_high)
-                watermark_width = 1000
+                watermark_high = int(self.ratio_ink / watermark_width * watermark_high)
+                watermark_width = self.ratio_ink
                 print(watermark_width, watermark_high)
                 watermark = watermark.resize((watermark_width, watermark_high),
                                              resample=Image.ANTIALIAS)
-                # 居中
+
+                # 下居中
+                if self.position_ink == 'bottom center':
+                    position = (int((im_width - watermark_width) / 2), im_high - watermark_high)
+                # 下居左
+                elif self.position_ink == 'bottom left':
+                    position = (10, im_high - watermark_high)
+                # 下居右
+                elif self.position_ink == 'bottom right':
+                    position = (im_width - watermark_width, im_high - watermark_high)
+                # 上居中
+                elif self.position_ink == 'top center':
+                    position = (int((im_width - watermark_width) / 2), 10)
+                # 上居左
+                elif self.position_ink == 'top left':
+                    position = (10, 10)
+                # 上居右
+                else:
+                    position = (im_width - watermark_width, 10)
+
                 layer = Image.new('RGBA', im.size, (0, 0, 0, 0))
-                layer.paste(watermark, (im_width - watermark_width, im_high - watermark_high))
+                layer.paste(watermark, position)
                 out = Image.composite(layer, im, layer)
                 _, _f = os.path.split(_path_file)
                 _path = os.path.join(path_out, _f)
@@ -402,7 +431,7 @@ layout: default
                         self.resize_with_the_same_ratio(_in, path_resize_day)
                         _in = path_resize_day
                     if do_add_ink:
-                        self.add_ink(_in, _in, path_ink=r'_files/w1-white.png')
+                        self.add_ink(_in, _in)
                     if do_render_md:
                         self.render_markdown(path_resize_day, path_mds_resize_day)
                     rendered[path_raw_day] = True
@@ -540,15 +569,7 @@ layout: default
 
 if __name__ == '__main__':
     hp = HelloPhoto()
-    hp.encrypt_by_str('/home/zoo/_L/Zoo-HZ-Media-Volunteers/static/images/raw',
-                      key='')
-    # hp.create_page_info(_path_images_raw)
-    # hp.render_all(do_filter=True)
-    # hp.just_render_md()
-    # hp.render_all()
-    #
-    # hp.render_markdown(
-    #     path_in='/home/zoo/_L/Zoo-HZ-Media-Volunteers/static/images/webp-resize-2000/202105/20210520WaterInk',
-    #     path_out='/home/zoo/_L/Zoo-HZ-Media-Volunteers/mds/webp-resize-2000/202105/20210520WaterInk.md'
-    # )
-    # hp.just_render_home_page()
+    hp.position_ink = 'bottom left'
+    hp.ratio_ink = 800
+    hp.path_ink = r'/home/zoo/_L/Zoo-HZ-Media-Volunteers/_files/杭州动物园水印.白.png'
+    hp.render_all()
