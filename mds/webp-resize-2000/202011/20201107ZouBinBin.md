@@ -20,7 +20,7 @@ layout: default
 ##### size: 0.25M, 花冠皱盔犀鸟
 ![DSCF4992.JPG](/Zoo-HZ-Media-Volunteers/static/images/webp-resize-2000/202011/20201107ZouBinBin/DSCF4992.JPG)
 
-##### size: 0.26M, 花冠皱盔犀鸟
+##### size: 0.25M, 花冠皱盔犀鸟
 ![DSCF4993.JPG](/Zoo-HZ-Media-Volunteers/static/images/webp-resize-2000/202011/20201107ZouBinBin/DSCF4993.JPG)
 
 ##### size: 0.35M, 孔雀
@@ -59,7 +59,7 @@ layout: default
 ##### size: 0.71M, 火烈鸟
 ![DSCF5122.JPG](/Zoo-HZ-Media-Volunteers/static/images/webp-resize-2000/202011/20201107ZouBinBin/DSCF5122.JPG)
 
-##### size: 0.45M, DSCF5137.JPG
+##### size: 0.44M, DSCF5137.JPG
 ![DSCF5137.JPG](/Zoo-HZ-Media-Volunteers/static/images/webp-resize-2000/202011/20201107ZouBinBin/DSCF5137.JPG)
 
 ##### size: 0.79M, 火烈鸟
@@ -86,10 +86,10 @@ layout: default
 ##### size: 0.26M, 丹顶鹤
 ![DSCF5224.JPG](/Zoo-HZ-Media-Volunteers/static/images/webp-resize-2000/202011/20201107ZouBinBin/DSCF5224.JPG)
 
-##### size: 0.54M, 黑猩猩幼崽
+##### size: 0.55M, 黑猩猩幼崽
 ![DSCF5263.JPG](/Zoo-HZ-Media-Volunteers/static/images/webp-resize-2000/202011/20201107ZouBinBin/DSCF5263.JPG)
 
-##### size: 0.58M, 黑猩猩幼崽
+##### size: 0.59M, 黑猩猩幼崽
 ![DSCF5274.JPG](/Zoo-HZ-Media-Volunteers/static/images/webp-resize-2000/202011/20201107ZouBinBin/DSCF5274.JPG)
 
 ##### size: 0.21M, DSCF5291.JPG

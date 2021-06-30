@@ -11,7 +11,7 @@ layout: default
 ##### size: 0.29M, 丹顶鹤
 ![20210328 丹顶鹤 邹斌斌.JPG](/Zoo-HZ-Media-Volunteers/static/images/webp-resize-2000/202103/20210328ZouBinBin/20210328 丹顶鹤 邹斌斌.JPG)
 
-##### size: 1.0M, 火烈鸟
+##### size: 1.01M, 火烈鸟
 ![20210328 火烈鸟 邹斌斌.JPG](/Zoo-HZ-Media-Volunteers/static/images/webp-resize-2000/202103/20210328ZouBinBin/20210328 火烈鸟 邹斌斌.JPG)
 
 ##### size: 0.53M, 白琵鹭

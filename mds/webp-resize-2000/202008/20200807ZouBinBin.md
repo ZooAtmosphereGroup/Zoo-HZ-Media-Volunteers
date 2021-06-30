@@ -32,7 +32,7 @@ layout: default
 ##### size: 0.79M, 梅花鹿
 ![20200806 梅花鹿  2.jpg](/Zoo-HZ-Media-Volunteers/static/images/webp-resize-2000/202008/20200807ZouBinBin/20200806 梅花鹿  2.jpg)
 
-##### size: 0.78M, 梅花鹿
+##### size: 0.77M, 梅花鹿
 ![20200806 梅花鹿  3.jpg](/Zoo-HZ-Media-Volunteers/static/images/webp-resize-2000/202008/20200807ZouBinBin/20200806 梅花鹿  3.jpg)
 
 ##### size: 1.12M, 梅花鹿
@@ -56,7 +56,7 @@ layout: default
 ##### size: 0.66M, 火烈鸟
 ![20200806 火烈鸟 .jpg](/Zoo-HZ-Media-Volunteers/static/images/webp-resize-2000/202008/20200807ZouBinBin/20200806 火烈鸟 .jpg)
 
-##### size: 0.48M, 环尾狐猴
+##### size: 0.47M, 环尾狐猴
 ![20200806 环尾狐猴 .jpg](/Zoo-HZ-Media-Volunteers/static/images/webp-resize-2000/202008/20200807ZouBinBin/20200806 环尾狐猴 .jpg)
 
 ##### size: 0.51M, 细尾獴
@@ -83,10 +83,10 @@ layout: default
 ##### size: 0.9M, 黑麂 
 ![20200806 黑麂 .jpg](/Zoo-HZ-Media-Volunteers/static/images/webp-resize-2000/202008/20200807ZouBinBin/20200806 黑麂 .jpg)
 
-##### size: 1.25M, DJI_0256
+##### size: 1.26M, DJI_0256
 ![DJI_0256.JPG](/Zoo-HZ-Media-Volunteers/static/images/webp-resize-2000/202008/20200807ZouBinBin/DJI_0256.JPG)
 
-##### size: 0.57M, DSCF8447
+##### size: 0.58M, DSCF8447
 ![DSCF8447.jpg](/Zoo-HZ-Media-Volunteers/static/images/webp-resize-2000/202008/20200807ZouBinBin/DSCF8447.jpg)
 
 ##### size: 0.66M, DSCF8632

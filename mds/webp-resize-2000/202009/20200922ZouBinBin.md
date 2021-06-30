@@ -11,7 +11,7 @@ layout: default
 ##### size: 1.14M, DSCF3335.JPG
 ![DSCF3335.JPG](/Zoo-HZ-Media-Volunteers/static/images/webp-resize-2000/202009/20200922ZouBinBin/DSCF3335.JPG)
 
-##### size: 0.26M, DSCF3346.JPG
+##### size: 0.27M, DSCF3346.JPG
 ![DSCF3346.JPG](/Zoo-HZ-Media-Volunteers/static/images/webp-resize-2000/202009/20200922ZouBinBin/DSCF3346.JPG)
 
 ##### size: 0.36M, DSCF3351.JPG
@@ -62,13 +62,13 @@ layout: default
 ##### size: 0.6M, DSCF3627.JPG
 ![DSCF3627.JPG](/Zoo-HZ-Media-Volunteers/static/images/webp-resize-2000/202009/20200922ZouBinBin/DSCF3627.JPG)
 
-##### size: 0.56M, DSCF3635.JPG
+##### size: 0.57M, DSCF3635.JPG
 ![DSCF3635.JPG](/Zoo-HZ-Media-Volunteers/static/images/webp-resize-2000/202009/20200922ZouBinBin/DSCF3635.JPG)
 
 ##### size: 0.56M, DSCF3638.JPG
 ![DSCF3638.JPG](/Zoo-HZ-Media-Volunteers/static/images/webp-resize-2000/202009/20200922ZouBinBin/DSCF3638.JPG)
 
-##### size: 0.41M, 猕猴
+##### size: 0.4M, 猕猴
 ![DSCF3643.JPG](/Zoo-HZ-Media-Volunteers/static/images/webp-resize-2000/202009/20200922ZouBinBin/DSCF3643.JPG)
 
 ##### size: 0.35M, 猕猴

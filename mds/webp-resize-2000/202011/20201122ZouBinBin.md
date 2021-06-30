@@ -23,7 +23,7 @@ layout: default
 ##### size: 0.45M, 蓝狐
 ![DSCF5547.JPG](/Zoo-HZ-Media-Volunteers/static/images/webp-resize-2000/202011/20201122ZouBinBin/DSCF5547.JPG)
 
-##### size: 0.38M, 白狐
+##### size: 0.37M, 白狐
 ![DSCF5548.JPG](/Zoo-HZ-Media-Volunteers/static/images/webp-resize-2000/202011/20201122ZouBinBin/DSCF5548.JPG)
 
 ##### size: 0.94M, DSCF5558.JPG
@@ -32,7 +32,7 @@ layout: default
 ##### size: 0.64M, DSCF5593.JPG
 ![DSCF5593.JPG](/Zoo-HZ-Media-Volunteers/static/images/webp-resize-2000/202011/20201122ZouBinBin/DSCF5593.JPG)
 
-##### size: 0.38M, DSCF5622.JPG
+##### size: 0.37M, DSCF5622.JPG
 ![DSCF5622.JPG](/Zoo-HZ-Media-Volunteers/static/images/webp-resize-2000/202011/20201122ZouBinBin/DSCF5622.JPG)
 
 ##### size: 0.6M, 白鹭

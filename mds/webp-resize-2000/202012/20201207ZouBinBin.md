@@ -23,7 +23,7 @@ layout: default
 ##### size: 0.58M, 黇鹿or梅花鹿
 ![DSCF5798.JPG](/Zoo-HZ-Media-Volunteers/static/images/webp-resize-2000/202012/20201207ZouBinBin/DSCF5798.JPG)
 
-##### size: 0.75M, 细尾獴
+##### size: 0.76M, 细尾獴
 ![DSCF5807.JPG](/Zoo-HZ-Media-Volunteers/static/images/webp-resize-2000/202012/20201207ZouBinBin/DSCF5807.JPG)
 
 ##### size: 0.6M, 小熊猫

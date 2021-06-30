@@ -14,7 +14,7 @@ layout: default
 ##### size: 0.48M, 松鼠
 ![20200707 松鼠.jpg](/Zoo-HZ-Media-Volunteers/static/images/webp-resize-2000/202007/20200706ZouBinBin/20200707 松鼠.jpg)
 
-##### size: 0.45M, 梅花鹿 好奇心
+##### size: 0.46M, 梅花鹿 好奇心
 ![20200707 梅花鹿 好奇心.JPG](/Zoo-HZ-Media-Volunteers/static/images/webp-resize-2000/202007/20200706ZouBinBin/20200707 梅花鹿 好奇心.JPG)
 
 ##### size: 0.78M, 梅花鹿
@@ -38,10 +38,10 @@ layout: default
 ##### size: 0.76M, 白黇鹿
 ![20200707 白黇鹿 .jpg](/Zoo-HZ-Media-Volunteers/static/images/webp-resize-2000/202007/20200706ZouBinBin/20200707 白黇鹿 .jpg)
 
-##### size: 0.88M, 白黇鹿 舔舐
+##### size: 0.87M, 白黇鹿 舔舐
 ![20200707 白黇鹿 舔舐.jpg](/Zoo-HZ-Media-Volunteers/static/images/webp-resize-2000/202007/20200706ZouBinBin/20200707 白黇鹿 舔舐.jpg)
 
-##### size: 0.69M, 白黇鹿 鹿宝宝第一次站起来
+##### size: 0.7M, 白黇鹿 鹿宝宝第一次站起来
 ![20200707 白黇鹿 鹿宝宝第一次站起来.JPG](/Zoo-HZ-Media-Volunteers/static/images/webp-resize-2000/202007/20200706ZouBinBin/20200707 白黇鹿 鹿宝宝第一次站起来.JPG)
 
 ##### size: 0.81M, 白黇鹿
@@ -56,7 +56,7 @@ layout: default
 ##### size: 0.2M, 红龙睛蝶尾
 ![20200707 红龙睛蝶尾.jpg.jpg](/Zoo-HZ-Media-Volunteers/static/images/webp-resize-2000/202007/20200706ZouBinBin/20200707 红龙睛蝶尾.jpg.jpg)
 
-##### size: 0.68M, 袋鼠
+##### size: 0.69M, 袋鼠
 ![20200707 袋鼠.JPG](/Zoo-HZ-Media-Volunteers/static/images/webp-resize-2000/202007/20200706ZouBinBin/20200707 袋鼠.JPG)
 
 ##### size: 0.43M, 长颈鹿
@@ -83,7 +83,7 @@ layout: default
 ##### size: 0.82M, DSCF6274.JPG
 ![DSCF6274.JPG](/Zoo-HZ-Media-Volunteers/static/images/webp-resize-2000/202007/20200706ZouBinBin/DSCF6274.JPG)
 
-##### size: 0.53M, DSCF6314.JPG
+##### size: 0.55M, DSCF6314.JPG
 ![DSCF6314.JPG](/Zoo-HZ-Media-Volunteers/static/images/webp-resize-2000/202007/20200706ZouBinBin/DSCF6314.JPG)
 
 ##### size: 0.8M, DSCF6336.JPG

@@ -14,7 +14,7 @@ layout: default
 ##### size: 0.71M, 棕熊
 ![20200822 棕熊 .jpg](/Zoo-HZ-Media-Volunteers/static/images/webp-resize-2000/202008/20200822ZouBinBin/20200822 棕熊 .jpg)
 
-##### size: 0.49M, 火烈鸟
+##### size: 0.48M, 火烈鸟
 ![20200822 火烈鸟  2.jpg](/Zoo-HZ-Media-Volunteers/static/images/webp-resize-2000/202008/20200822ZouBinBin/20200822 火烈鸟  2.jpg)
 
 ##### size: 0.38M, 火烈鸟
@@ -86,13 +86,13 @@ layout: default
 ##### size: 0.57M, DSCF1804.jpg
 ![DSCF1804.jpg](/Zoo-HZ-Media-Volunteers/static/images/webp-resize-2000/202008/20200822ZouBinBin/DSCF1804.jpg)
 
-##### size: 1.11M, 盘羊
+##### size: 1.12M, 盘羊
 ![DSCF1830.jpg](/Zoo-HZ-Media-Volunteers/static/images/webp-resize-2000/202008/20200822ZouBinBin/DSCF1830.jpg)
 
 ##### size: 0.47M, 毛冠鹿
 ![DSCF1900.jpg](/Zoo-HZ-Media-Volunteers/static/images/webp-resize-2000/202008/20200822ZouBinBin/DSCF1900.jpg)
 
-##### size: 1.01M, DSCF1948.jpg
+##### size: 1.03M, DSCF1948.jpg
 ![DSCF1948.jpg](/Zoo-HZ-Media-Volunteers/static/images/webp-resize-2000/202008/20200822ZouBinBin/DSCF1948.jpg)
 
 

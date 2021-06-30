@@ -14,7 +14,7 @@ layout: default
 ##### size: 0.61M, DSCF4407.JPG
 ![DSCF4407.JPG](/Zoo-HZ-Media-Volunteers/static/images/webp-resize-2000/202006/20200605ZouBinBin/DSCF4407.JPG)
 
-##### size: 0.47M, DSCF4410.JPG
+##### size: 0.48M, DSCF4410.JPG
 ![DSCF4410.JPG](/Zoo-HZ-Media-Volunteers/static/images/webp-resize-2000/202006/20200605ZouBinBin/DSCF4410.JPG)
 
 ##### size: 0.23M, DSCF4412.JPG
@@ -32,7 +32,7 @@ layout: default
 ##### size: 0.77M, DSCF4441.JPG
 ![DSCF4441.JPG](/Zoo-HZ-Media-Volunteers/static/images/webp-resize-2000/202006/20200605ZouBinBin/DSCF4441.JPG)
 
-##### size: 0.64M, DSCF4451.JPG
+##### size: 0.65M, DSCF4451.JPG
 ![DSCF4451.JPG](/Zoo-HZ-Media-Volunteers/static/images/webp-resize-2000/202006/20200605ZouBinBin/DSCF4451.JPG)
 
 ##### size: 0.19M, DSCF4472.JPG
@@ -62,7 +62,7 @@ layout: default
 ##### size: 0.28M, DSCF4558.JPG
 ![DSCF4558.JPG](/Zoo-HZ-Media-Volunteers/static/images/webp-resize-2000/202006/20200605ZouBinBin/DSCF4558.JPG)
 
-##### size: 0.41M, DSCF4561.JPG
+##### size: 0.4M, DSCF4561.JPG
 ![DSCF4561.JPG](/Zoo-HZ-Media-Volunteers/static/images/webp-resize-2000/202006/20200605ZouBinBin/DSCF4561.JPG)
 
 ##### size: 0.44M, DSCF4562.JPG
