@@ -44,7 +44,6 @@ class HelloPhoto(object):
     file_template_home = os.path.join(_path_templates, 'home.html')
     # 发布站点地址
     site = 'Zoo-HZ-Media-Volunteers'
-    file_lighting = os.path.join(_path_templates, 'lighting.info')
 
     def __init__(self):
 
@@ -64,13 +63,10 @@ class HelloPhoto(object):
             with open(self.file_rendered, 'w') as f:
                 json.dump([], f)
 
-        if not os.path.exists(self.file_lighting):
-            with open(self.file_lighting, 'w') as f:
-                json.dump({}, f)
         self.path_ink_white = os.path.join(_path_files, 'white.png')
         self.path_ink_black = os.path.join(_path_files, 'black.png')
         self.path_ink = self.path_ink_white
-        self.lighting = {}
+        self.threshold_lighting = 120
 
     @classmethod
     def load_rendered(cls):
@@ -278,7 +274,7 @@ class HelloPhoto(object):
 
                 print(lighting)
                 # use black
-                if lighting >= 111:
+                if lighting >= self.threshold_lighting:
                     print('use black')
                     watermark = Image.open(self.path_ink_black)
                     watermark = watermark.resize((watermark_width, watermark_high),
@@ -610,4 +606,5 @@ if __name__ == '__main__':
     hp = HelloPhoto()
     hp.position_ink = 'bottom right'
     hp.ratio_ink = 800
-    hp.render_all(do_transfer_jpg_to_webp=False, do_render_md=False, do_render_home=False)
+    hp.render_all(do_transfer_jpg_to_webp=False, do_render_home=False)
+    # hp.just_render_md()

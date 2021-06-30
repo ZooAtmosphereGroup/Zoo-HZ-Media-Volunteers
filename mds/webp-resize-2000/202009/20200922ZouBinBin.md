@@ -68,7 +68,7 @@ layout: default
 ##### size: 0.56M, DSCF3638.JPG
 ![DSCF3638.JPG](/Zoo-HZ-Media-Volunteers/static/images/webp-resize-2000/202009/20200922ZouBinBin/DSCF3638.JPG)
 
-##### size: 0.4M, 猕猴
+##### size: 0.41M, 猕猴
 ![DSCF3643.JPG](/Zoo-HZ-Media-Volunteers/static/images/webp-resize-2000/202009/20200922ZouBinBin/DSCF3643.JPG)
 
 ##### size: 0.35M, 猕猴

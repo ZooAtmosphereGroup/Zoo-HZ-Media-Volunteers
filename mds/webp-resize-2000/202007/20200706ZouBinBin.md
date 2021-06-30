@@ -38,7 +38,7 @@ layout: default
 ##### size: 0.76M, 白黇鹿
 ![20200707 白黇鹿 .jpg](/Zoo-HZ-Media-Volunteers/static/images/webp-resize-2000/202007/20200706ZouBinBin/20200707 白黇鹿 .jpg)
 
-##### size: 0.87M, 白黇鹿 舔舐
+##### size: 0.88M, 白黇鹿 舔舐
 ![20200707 白黇鹿 舔舐.jpg](/Zoo-HZ-Media-Volunteers/static/images/webp-resize-2000/202007/20200706ZouBinBin/20200707 白黇鹿 舔舐.jpg)
 
 ##### size: 0.7M, 白黇鹿 鹿宝宝第一次站起来
