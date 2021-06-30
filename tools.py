@@ -3,8 +3,9 @@ import os
 import time
 from string import punctuation
 import json
+import math
 
-from PIL import Image
+from PIL import Image, ImageStat
 
 _path_project = os.path.dirname(os.path.abspath(__file__))
 _path_templates = os.path.join(_path_project, 'templates')
@@ -43,9 +44,10 @@ class HelloPhoto(object):
     file_template_home = os.path.join(_path_templates, 'home.html')
     # 发布站点地址
     site = 'Zoo-HZ-Media-Volunteers'
+    file_lighting = os.path.join(_path_templates, 'lighting.info')
 
     def __init__(self):
-        self.path_ink = None
+
         self.position_ink = 'bottom right'
         self.ratio_ink = 1000
         positions = (
@@ -58,10 +60,17 @@ class HelloPhoto(object):
 
         for i in _path_list:
             self.mkdir_if_not_exist(i)
-        if os.path.exists(self.file_rendered):
-            return
-        with open(self.file_rendered, 'w') as f:
-            json.dump({}, f)
+        if not os.path.exists(self.file_rendered):
+            with open(self.file_rendered, 'w') as f:
+                json.dump([], f)
+
+        if not os.path.exists(self.file_lighting):
+            with open(self.file_lighting, 'w') as f:
+                json.dump({}, f)
+        self.path_ink_white = os.path.join(_path_files, 'white.png')
+        self.path_ink_black = os.path.join(_path_files, 'black.png')
+        self.path_ink = self.path_ink_white
+        self.lighting = {}
 
     @classmethod
     def load_rendered(cls):
@@ -229,7 +238,7 @@ class HelloPhoto(object):
                 im_width = im.size[0]
                 im_high = im.size[1]
 
-                watermark = Image.open(self.path_ink)
+                watermark = Image.open(self.path_ink_white)
                 watermark_width = watermark.size[0]
                 watermark_high = watermark.size[1]
 
@@ -242,25 +251,48 @@ class HelloPhoto(object):
 
                 # 下居中
                 if self.position_ink == 'bottom center':
-                    position = (int((im_width - watermark_width) / 2), im_high - watermark_high)
+                    left, top = int((im_width - watermark_width) / 2), im_high - watermark_high
                 # 下居左
                 elif self.position_ink == 'bottom left':
-                    position = (10, im_high - watermark_high)
+                    left, top = 10, im_high - watermark_high
                 # 下居右
                 elif self.position_ink == 'bottom right':
-                    position = (im_width - watermark_width, im_high - watermark_high)
+                    left, top = im_width - watermark_width, im_high - watermark_high
                 # 上居中
                 elif self.position_ink == 'top center':
-                    position = (int((im_width - watermark_width) / 2), 10)
+                    left, top = int((im_width - watermark_width) / 2), 10
                 # 上居左
                 elif self.position_ink == 'top left':
-                    position = (10, 10)
+                    left, top = 10, 10
                 # 上居右
                 else:
-                    position = (im_width - watermark_width, 10)
+                    left, top = (im_width - watermark_width, 10)
+
+                # todo: 计算区域亮度
+                # 获取水印区域
+                right, bottom = left + watermark_width, top + watermark_high
+                area = im.crop((left, top, right, bottom))
+                stat = ImageStat.Stat(area)
+                r, g, b = stat.rms
+                lighting = math.sqrt(0.241 * (r ** 2) + 0.691 * (g ** 2) + 0.068 * (b ** 2))
+
+                print(lighting)
+                # use black
+                if lighting >= 111:
+                    print('use black')
+                    watermark = Image.open(self.path_ink_black)
+                    watermark = watermark.resize((watermark_width, watermark_high),
+                                                 resample=Image.ANTIALIAS)
+
+                # with open(self.file_lighting, 'r') as fff:
+                #     lighting = json.load(fff)
+                # self.lighting[_path_file] = math.sqrt(0.241 * (r ** 2) + 0.691 * (g ** 2) + 0.068 * (b ** 2))
+                #
+                # with open(self.file_lighting, 'w') as fff:
+                #     json.dump(lighting, fff)
 
                 layer = Image.new('RGBA', im.size, (0, 0, 0, 0))
-                layer.paste(watermark, position)
+                layer.paste(watermark, (left, top))
                 out = Image.composite(layer, im, layer)
                 _, _f = os.path.split(_path_file)
                 _path = os.path.join(path_out, _f)
@@ -353,6 +385,9 @@ layout: default
         # 渲染主页面
         print('render_home_page', path_in)
 
+        with open(cls.file_rendered, 'r') as f:
+            rendered = json.load(f)
+
         with open(cls.file_page_info, 'r') as f:
             page_info = json.load(f)
 
@@ -364,7 +399,7 @@ layout: default
 
         pages = ''
         # 逆序
-        for page in sorted(list(page_info.keys()), reverse=True):
+        for page in rendered:
             info = page_info[page]
             path_author = info['path_author']
             path_resize = info['path_resize']
@@ -411,8 +446,8 @@ layout: default
                 # /static/images/raw/202002/20200202xxx
                 path_raw_day = os.path.join(path_raw_month, raw_day)
 
-                if do_filter and path_raw_day in rendered:
-                    print(path_raw_day, 'has rendered')
+                if do_filter and raw_day in rendered:
+                    print(raw_day, 'has rendered')
                     continue
                 if not os.path.isdir(path_raw_day):
                     print(path_raw_day, 'is not dir')
@@ -434,7 +469,10 @@ layout: default
                         self.add_ink(_in, _in)
                     if do_render_md:
                         self.render_markdown(path_resize_day, path_mds_resize_day)
-                    rendered[path_raw_day] = True
+
+                    #
+                    if raw_day not in rendered:
+                        rendered = [raw_day] + rendered
                 except Exception as e:
                     print(path_raw_day, e)
                     continue
@@ -543,6 +581,7 @@ layout: default
             folder = root.split('/')[-1]
             # 跳过已渲染
             if ignore_rendered and folder in page_info:
+                print('ignore', folder)
                 continue
             print('create_page_info', folder)
             author = folder[8:]
@@ -569,7 +608,6 @@ layout: default
 
 if __name__ == '__main__':
     hp = HelloPhoto()
-    hp.position_ink = 'bottom left'
+    hp.position_ink = 'bottom right'
     hp.ratio_ink = 800
-    hp.path_ink = r'/home/zoo/_L/Zoo-HZ-Media-Volunteers/_files/杭州动物园水印.白.png'
-    hp.render_all()
+    hp.render_all(do_transfer_jpg_to_webp=False, do_render_md=False, do_render_home=False)

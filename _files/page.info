@@ -849,5 +849,25 @@
         "remark": "",
         "thumbnail": "header.png",
         "title": "水印设计"
+    },
+    "20210626LiYou": {
+        "author": "LiYou",
+        "date": "20210626",
+        "path_author": "/202106/20210626LiYou",
+        "path_resize": "webp-resize-2000",
+        "photos_description": {
+            "小熊猫.jpg": "小熊猫.jpg",
+            "浣熊.jpg": "浣熊.jpg",
+            "浣熊2.jpg": "浣熊2.jpg",
+            "羊驼.jpg": "羊驼.jpg",
+            "耳廓狐.jpg": "耳廓狐.jpg",
+            "花冠皱盔犀鸟.jpg": "花冠皱盔犀鸟.jpg",
+            "薮猫.jpg": "薮猫.jpg",
+            "蜥蜴.jpg": "蜥蜴.jpg",
+            "鸸鹋.jpg": "鸸鹋.jpg"
+        },
+        "remark": "",
+        "thumbnail": "薮猫.jpg",
+        "title": ""
     }
 }
