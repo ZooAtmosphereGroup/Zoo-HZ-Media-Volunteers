@@ -606,5 +606,6 @@ if __name__ == '__main__':
     hp = HelloPhoto()
     hp.position_ink = 'bottom right'
     hp.ratio_ink = 800
-    hp.render_all(do_transfer_jpg_to_webp=False, do_render_home=False)
-    # hp.just_render_md()
+    # hp.render_all(do_transfer_jpg_to_webp=False, do_render_home=False)
+    hp.just_render_md()
+    hp.just_render_home_page()
