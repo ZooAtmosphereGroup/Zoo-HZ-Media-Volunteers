@@ -2,7 +2,7 @@
 layout: default
 ---
 ### 摄影: ZouBinBin
-### 描述: 
+### 描述: 富士XT30 & Tamron 70-200
 ### 提交时间: 20210515
 
 ##### size: 0.26M, 大红鹳
