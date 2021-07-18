@@ -5,7 +5,7 @@ from string import punctuation
 import json
 import math
 
-from PIL import Image, ImageStat
+# from PIL import Image, ImageStat
 
 _path_project = os.path.dirname(os.path.abspath(__file__))
 _path_templates = os.path.join(_path_project, 'templates')
@@ -615,4 +615,4 @@ if __name__ == '__main__':
     hp.ratio_ink = 800
     # hp.render_all(do_transfer_jpg_to_webp=False, do_filter=True)
     hp.just_render_md()
-    # hp.just_render_home_page()
+    hp.just_render_home_page()
