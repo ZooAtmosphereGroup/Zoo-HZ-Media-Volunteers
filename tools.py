@@ -311,7 +311,9 @@ class HelloPhoto(object):
     def render_markdown(cls, path_in, path_out):
         # 渲染页面单个页面
         print('render_markdown')
-        folder = path_in.split('/')[-1]
+        # todo: windows file system does not match
+        # folder = path_in.split('/')[-1]
+        _, folder = os.path.split(path_in)
 
         # 加载页面信息文件
         with open(cls.file_page_info, 'r', encoding='utf-8') as f:
@@ -360,7 +362,10 @@ layout: default
             size_str = 'size: %sM' % size
 
             # url_home/static/images/webp/zzz/a.webp
-            path = path_abs_f[path_abs_f.find('static/images/'):]
+            if 'static/images/' not in path_abs_f:
+                path = path_abs_f[path_abs_f.find('static\\images\\'):].replace('\\', '/')
+            else:
+                path = path_abs_f[path_abs_f.find('static/images/'):]
 
             # 照片描述
             i_description = photos_description[f] if f in photos_description else ''
@@ -381,16 +386,16 @@ layout: default
         # 渲染主页面
         print('render_home_page', path_in)
 
-        with open(cls.file_rendered, 'r') as f:
+        with open(cls.file_rendered, 'r', encoding='utf-8') as f:
             rendered = json.load(f)
 
-        with open(cls.file_page_info, 'r') as f:
+        with open(cls.file_page_info, 'r', encoding='utf-8') as f:
             page_info = json.load(f)
 
-        with open(cls.file_template_div_page, 'r') as f:
+        with open(cls.file_template_div_page, 'r', encoding='utf-8') as f:
             div_page = f.read()
 
-        with open(cls.file_template_home, 'r') as f:
+        with open(cls.file_template_home, 'r', encoding='utf-8') as f:
             home = f.read()
 
         pages = ''
@@ -415,7 +420,7 @@ layout: default
                                      remark=remark)
         home = home % pages
         # 写入
-        with open(cls.file_index, 'w') as f:
+        with open(cls.file_index, 'w', encoding='utf-8') as f:
             f.write(home)
 
     def render_all(self, do_filter=False, do_add_ink=True,
@@ -574,7 +579,8 @@ layout: default
             if not files:
                 continue
 
-            folder = root.split('/')[-1]
+            _, folder = os.path.split(root)
+            # folder = root.split('/')[-1]
             # 跳过已渲染
             if ignore_rendered and folder in page_info:
                 print('ignore', folder)
@@ -604,8 +610,9 @@ layout: default
 
 if __name__ == '__main__':
     hp = HelloPhoto()
+    # hp.create_page_info(r'C:\-C\Zoo-HZ-Media-Volunteers\static\images\raw\202107\20210717ZouBinbin')
     hp.position_ink = 'bottom right'
     hp.ratio_ink = 800
-    # hp.render_all(do_transfer_jpg_to_webp=False, do_render_home=False)
+    # hp.render_all(do_transfer_jpg_to_webp=False, do_filter=True)
     hp.just_render_md()
-    hp.just_render_home_page()
+    # hp.just_render_home_page()

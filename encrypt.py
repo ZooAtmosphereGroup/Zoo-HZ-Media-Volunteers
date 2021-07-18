@@ -149,6 +149,5 @@ if __name__ == '__main__':
     path_target = _path_raw
 
     he = HelloEncrypt(args.psw_aes, args.psw_stream)
-    he.do_encrypt = False
-    he.encrypt_file(path_target)
-
+    he.do_encrypt = True
+    he.encrypt_file(_path_raw)
